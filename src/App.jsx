@@ -31,27 +31,65 @@ function App() {
     {/* Finish Header */}
 
     {/* Start Container with latest trips */}
-    <section>
-      <h2>Latest</h2>
-      <div className="travelContainer">
-        <div className="travelCard">
-          <div className="travelCardContent"></div>
+    
+    <div className="cardContainer">
+      <div className="card">
+        <img src="../src/assets/traveller-1.jpg" alt="" />
+        <div className="cardInfo">
+          <p>data</p>
+          <p>local</p>
         </div>
-        
       </div>
-    </section>
+
+      <div className="card">
+        <img src="../src/assets/traveller-1.jpg" alt="" />
+        <div className="cardInfo">
+          <p>data</p>
+          <p>local</p>
+        </div>
+      </div>
+
+      <div className="card">
+        <img src="../src/assets/traveller-1.jpg" alt="" />
+        <div className="cardInfo">
+          <p>data</p>
+          <p>local</p>
+        </div>
+      </div>
+
+      <div className="card">
+        <img src="../src/assets/traveller-1.jpg" alt="" />
+        <div className="cardInfo">
+          <p>data</p>
+          <p>local</p>
+        </div>
+      </div>
+
+    </div>
+      
+
+        
+          
+      
+
+      
+    
+      
+        
+       
+    
     {/* Finish Container with latest trips */}
 
 
 
-
+    {/* Start footer */}
     <footer>
       <div className="footer">
       <p>Copyright</p>
-      <p>Contacts</p>
-      <p>Social Media</p>
+      <p>Social Media ICON</p>
       </div>
     </footer>
+    {/* Finish footer */}
       
     </>
   )

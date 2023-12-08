@@ -2,9 +2,18 @@
     box-sizing: border-box;
     padding: 0px;
     margin: 0px;
-    max-width: 1200px;
-    
 }
+
+:root {
+    --primary-color: #5c7cdb;
+    --primary-color-dark: #354e9c;
+    --text-dark: #0f172a;
+    --text-light: #64748b;
+    --white: #ffffff;
+    --extra-light: #f1f5f9;
+}
+
+
 
 
 /* Start Navegation Bar */
@@ -22,7 +31,7 @@
     font-family: Poppins, sans-serif;
     font-size: 1.5rem;
     font-weight: 600;
-    color: #000;
+    color: var(--text-dark);
 }
 
 .navBar > ul {
@@ -31,15 +40,16 @@
     align-items: center;
     gap: 2rem;
     font-family: Poppins, sans-serif;
+    font-weight: 600;
 }
 
 nav.Link, a {
     text-decoration: none;
-    color: #64748b; 
+    color: var(--text-light);
 }
 
 nav.Link, a:hover {
-    color: #000;
+    color: var(--primary-color-dark);
 }
 
 
@@ -47,7 +57,7 @@ nav.Link, a:hover {
     font-size: 1rem;
     font-weight: 500;
     color: #fff;
-    background-color: #5c7cdb;
+    background-color: var(--primary-color);
     cursor: pointer;
     padding: 0.75rem 2rem;
     outline: none;
@@ -59,7 +69,7 @@ nav.Link, a:hover {
 }
 
 .btnContact:hover {
-    background-color: #3d5cb8 ;
+    background-color: var(--primary-color-dark);
 }
 /* Finish Favegation Bar */
 
@@ -82,21 +92,47 @@ nav.Link, a:hover {
     width: 100%;
     display: flex;
 }
-
-
-
-
-
-
-
 /* Finish Header */
 
 
+/* Start cardContainer Lastest Trips */
 
+.cardContainer {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+    
+}
+
+.card {
+    border-radius: 10px;
+    border: solid 2px black;
+    width: auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
+}
+
+.card > img {
+    border-radius: 10px;
+    width: 200px;
+}
+
+.cardInfo {
+    text-align: center;
+
+}
+
+
+
+/* Finish cardContainer Lastest Trips */
 
 
 
 footer {
+    display: block;
     text-align: center ;
 }
 
