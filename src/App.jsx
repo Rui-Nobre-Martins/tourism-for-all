@@ -1,4 +1,4 @@
-
+import { Swiper, SwiperSlide} from "swiper/react"
 
 function App() {
   
@@ -21,14 +21,24 @@ function App() {
     {/* Finish Favegation Bar */}
 
     
-     {/* Start Header */}
+     {/* Start Header slider */}
 
-    <header className="headerContainer">
+    {/* <header className="headerContainer">
         <h1 className="headerTitle">Dream Travel</h1>
-        <img className="headerImage" src="../src/assets/header.jpg" alt="Plane lading" />
-    </header>
+        <img className="headerImage" src="../src/assets/header.jpg" alt="Plane lading" /> */}
 
-    {/* Finish Header */}
+        <div className="headerContainer">
+          <h1 className="headerTitle">Travel for all</h1>
+
+          <Swiper>
+            <SwiperSlide>
+              <img src="../src/assets/header.jpg" alt="" />
+            </SwiperSlide>
+          </Swiper>
+        </div>
+    {/* </header> */}
+
+    {/* Finish Header slider */}
 
     {/* Start Container with latest trips */}
     
