@@ -1,104 +1,33 @@
-import { Swiper, SwiperSlide} from "swiper/react"
+import NavegationBar from "./components/NavegationBar"
+import Header from "./components/Header"
+import CardContainerTrip from "./components/CardContainerTrip"
+import MapLocation from "./components/MapLocation"
+import Footer from "./components/Footer"
 
 function App() {
   
   return (
     <>
     {/* Start Navegation Bar */}
-
-    <nav className="navBar">
-      <div className="navLogo">
-        <a href="/">Travel For All</a> 
-      </div>
-      <ul className="navLink">
-        <li><a href="/">Home</a></li>
-        <li><a href="/addlocation">Add Location</a></li>
-        <li><a href="/thetraveler">The Traveler</a></li>
-      </ul>
-      <button className="btnContact">Contacts</button>
-    </nav>
-
+    <NavegationBar></NavegationBar>
     {/* Finish Favegation Bar */}
 
-    
-     {/* Start Header slider */}
-
-    {/* <header className="headerContainer">
-        <h1 className="headerTitle">Dream Travel</h1>
-        <img className="headerImage" src="../src/assets/header.jpg" alt="Plane lading" /> */}
-
-        <div className="headerContainer">
-          <h1 className="headerTitle">Travel for all</h1>
-
-          <Swiper>
-            <SwiperSlide>
-              <img src="../src/assets/header.jpg" alt="" />
-            </SwiperSlide>
-          </Swiper>
-        </div>
-    {/* </header> */}
-
+    {/* Start Header slider */}
+    <Header></Header>
     {/* Finish Header slider */}
 
     {/* Start Container with latest trips */}
-    
-    <div className="cardContainer">
-      <div className="card">
-        <img src="../src/assets/traveller-1.jpg" alt="" />
-        <div className="cardInfo">
-          <p>data</p>
-          <p>local</p>
-        </div>
-      </div>
-
-      <div className="card">
-        <img src="../src/assets/traveller-1.jpg" alt="" />
-        <div className="cardInfo">
-          <p>data</p>
-          <p>local</p>
-        </div>
-      </div>
-
-      <div className="card">
-        <img src="../src/assets/traveller-1.jpg" alt="" />
-        <div className="cardInfo">
-          <p>data</p>
-          <p>local</p>
-        </div>
-      </div>
-
-      <div className="card">
-        <img src="../src/assets/traveller-1.jpg" alt="" />
-        <div className="cardInfo">
-          <p>data</p>
-          <p>local</p>
-        </div>
-      </div>
-
-    </div>
-      
-
-        
-          
-      
-
-      
-    
-      
-        
-       
-    
+    <CardContainerTrip></CardContainerTrip>
     {/* Finish Container with latest trips */}
 
+    {/* Start Map Location */}
 
+      colocar MAPBOX
+
+    {/* Finish Map Location */}
 
     {/* Start footer */}
-    <footer>
-      <div className="footer">
-      <p>Copyright</p>
-      <p>Social Media ICON</p>
-      </div>
-    </footer>
+    <Footer></Footer>
     {/* Finish footer */}
       
     </>

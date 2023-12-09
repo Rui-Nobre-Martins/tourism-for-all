@@ -17,6 +17,9 @@
 
 
 /* Start Navegation Bar */
+
+
+
 .navBar {
     margin: auto;
     padding: 1rem;
@@ -76,13 +79,12 @@ nav.Link, a:hover {
 
 /* Start Header */
 .headerContainer {
-    display: block;
-    flex-direction: column;
+    display: flex;
     flex-wrap: wrap;
-    padding: 3rem 1rem;
+    justify-content: center;
+    
 }
 .headerTitle {
-    text-align: center;
     font-size: 3rem;
     line-height: 3rem;
     font-family: Poppins, sans-serif;
@@ -90,12 +92,17 @@ nav.Link, a:hover {
 
 .headerImage{
     width: 100%;
-    display: flex;
+    
+   
 }
 /* Finish Header */
 
 
 /* Start cardContainer Lastest Trips */
+
+.latestTripsTitle {
+    text-align: center;
+}
 
 .cardContainer {
     display: flex;
