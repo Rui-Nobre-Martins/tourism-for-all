@@ -1,8 +1,9 @@
 import NavegationBar from "./components/NavegationBar"
-import Header from "./components/Header"
+import Header from "./components/Hero"
 import CardContainerTrip from "./components/CardContainerTrip"
 import MapLocation from "./components/MapLocation"
 import Footer from "./components/Footer"
+import Hero from "./components/Hero"
 
 function App() {
   
@@ -13,7 +14,7 @@ function App() {
     {/* Finish Favegation Bar */}
 
     {/* Start Header slider */}
-    <Header></Header>
+    <Hero></Hero>
     {/* Finish Header slider */}
 
     {/* Start Container with latest trips */}
@@ -22,7 +23,6 @@ function App() {
 
     {/* Start Map Location */}
 
-      colocar MAPBOX
 
     {/* Finish Map Location */}
 
