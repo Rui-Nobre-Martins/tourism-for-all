@@ -1,5 +1,4 @@
 import NavegationBar from "./components/NavegationBar"
-import Header from "./components/Hero"
 import CardContainerTrip from "./components/CardContainerTrip"
 import MapLocation from "./components/MapLocation"
 import Footer from "./components/Footer"
@@ -23,7 +22,7 @@ function App() {
 
     {/* Start Map Location */}
 
-
+    Criar um mapa mundo
     {/* Finish Map Location */}
 
     {/* Start footer */}

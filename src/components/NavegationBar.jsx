@@ -8,6 +8,7 @@ function NavegationBar() {
             </div>
         <ul className="navLink">
             <li><a href="/">Home</a></li>
+        
             <li><a href="/addlocation">Add Location</a></li>
             <li><a href="/thetraveler">The Traveler</a></li>
         </ul>

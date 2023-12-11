@@ -2,6 +2,7 @@
     box-sizing: border-box;
     padding: 0px;
     margin: 0px;
+    
 }
 
 :root {
@@ -18,29 +19,26 @@
 
 /* Start Navegation Bar */
 .navBar {
-    margin: auto;
-    padding: 1rem;
+    padding: 30px;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    gap: 1px;
-    
 }
 
-.navLogo {
+.navLogo > img {
     font-family: Poppins, sans-serif;
-    font-size: 1.5rem;
-    font-weight: 600;
     color: var(--text-dark);
+    width: 400px;
 }
 
 .navBar > ul {
     list-style: none;
     display: flex;
     align-items: center;
-    gap: 2rem;
+    gap: 50px;
     font-family: Poppins, sans-serif;
     font-weight: 600;
+    font-size: 20px;
 }
 
 nav.Link, a {
@@ -54,7 +52,7 @@ nav.Link, a:hover {
 
 
 .btnContact {
-    font-size: 1rem;
+    font-size: 16px;
     font-weight: 500;
     color: #fff;
     background-color: var(--primary-color);
@@ -74,17 +72,21 @@ nav.Link, a:hover {
 /* Finish Favegation Bar */
 
 
-/* Start Header */
-.headerContainer {
+/* Start Hero */
+
+.hero {
+    padding: 20px;
+}
+
+.heroContainer {
     width: 100%;
-    max-width: 1440px;
+    max-width: 1200px;
     margin: 0 auto;
     
 }
-.headerTitle {
+.heroTitle {
     text-align: center;
-    font-size: 3rem;
-    line-height: 3rem;
+    font-size: 30px;
     font-family: Poppins, sans-serif;
 }
 
@@ -93,7 +95,7 @@ nav.Link, a:hover {
     height: 400px;
     object-fit: cover;
 }
-/* Finish Header */
+/* Finish Hero */
 
 
 /* Start cardContainer Lastest Trips */
