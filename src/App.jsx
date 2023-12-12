@@ -3,6 +3,7 @@ import CardContainerTrip from "./components/CardContainerTrip"
 import MapLocation from "./components/MapLocation"
 import Footer from "./components/Footer"
 import Hero from "./components/Hero"
+import SubscribeFrom from "./components/SubscribeFrom"
 
 function App() {
   
@@ -21,9 +22,12 @@ function App() {
     {/* Finish Container with latest trips */}
 
     {/* Start Map Location */}
-
-    Criar um mapa mundo
+    <MapLocation></MapLocation>
     {/* Finish Map Location */}
+
+    {/* Start Subscribe Form */}
+    <SubscribeFrom></SubscribeFrom>
+    {/* Finish Subscribe Form */}
 
     {/* Start footer */}
     <Footer></Footer>

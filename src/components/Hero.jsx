@@ -14,7 +14,7 @@ function Hero() {
     return(
         <>
         <div className="hero">
-          <h1 className="heroTitle">Collecting Memories </h1>
+          <h1 className="heroTitle">360° Travel Inspirations</h1>
           <div className="heroContainer">
             <div className="heroImage">
               <Swiper

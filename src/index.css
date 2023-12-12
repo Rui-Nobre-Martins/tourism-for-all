@@ -1,75 +1,88 @@
 * {
-    box-sizing: border-box;
-    padding: 0px;
-    margin: 0px;  
+  box-sizing: border-box;
+  padding: 0px;
+  margin: 0px; 
+  font-family: "Poppins", sans-serif;
+
 }
 
 
 :root {
-    --primary-color: #5c7cdb;
-    --primary-color-dark: #354e9c;
-    --text-dark: #0f172a;
-    --text-light: #64748b;
-    --white: #ffffff;
-    --extra-light: #f1f5f9;
+  --primary-color: #5c7cdb;
+  --primary-color-dark: #354e9c;
+  --text-dark: #0f172a;
+  --text-light: #f9f9f9a4;
+  --white: #ffffff;
+  --extra-light: #f1f5f9;
 }
 
 
 
 
 /* Start Navegation Bar */
+
 .navBar {
-    padding: 30px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  overflow: hidden;
+  position: fixed;
+  background-color: white;
+  width: 100%;
+  z-index: 1000;
+  box-shadow: 5px 5px 20px rgba(81, 81, 81, 0.1);
+
 }
 
-.navLogo > a {
-    font-family: Poppins, sans-serif;
-    font-size: 25px;
-    font-weight: 600;
-    color: var(--text-dark);
+.navLogo a img{
+width: auto;
+height: 60px;
+padding: 12px;
+  
+  
 }
 
 .navBar > ul {
-    list-style: none;
-    display: flex;
-    align-items: center;
-    gap: 45px;
-    font-family: Poppins, sans-serif;
-    font-weight: 600;
-    font-size: 20px;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 45px;
+  font-weight: 600;
+  font-size: 16px;
+  color: black;
 }
 
 nav.Link, a {
-    text-decoration: none;
-    color: var(--text-light);
+  text-decoration: none;
+  color: var(--text-light);
+  color: black;
+    
 }
 
 nav.Link, a:hover {
-    color: var(--primary-color-dark);
+  color: var(--primary-color);
+    
 }
 
 
 .btnContact {
-    font-size: 16px;
-    font-weight: 500;
-    color: #fff;
-    background-color: var(--primary-color);
-    cursor: pointer;
-    padding: 0.75rem 2rem;
-    outline: none;
-    border-width: initial;
-    border-style: none;
-    border-color: initial;
-    border-image: initial;
-    border-radius: 2rem;
+  font-size: 16px;
+  font-weight: 500;
+  color: #fff;
+  background-color: var(--primary-color);
+  cursor: pointer;
+  padding: 0.75rem 2rem;
+  outline: none;
+  border-width: initial;
+  border-style: none;
+  border-color: initial;
+  border-image: initial;
+  border-radius: 32px;
+  margin-right: 10px;
 }
 
 .btnContact:hover {
-    background-color: var(--primary-color-dark);
+  background-color: var(--primary-color-dark);
 }
 /* Finish Favegation Bar */
 
@@ -77,71 +90,68 @@ nav.Link, a:hover {
 /* Start Hero */
 
 .hero {
-    padding: 20px;
+padding: 80px;
 }
 
 .heroContainer {
-    width: 100%;
-    max-width: 1200px;
-    margin: 0 auto;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
     
 }
 .heroTitle {
-    text-align: center;
-    font-size: 30px;
-    font-family: Poppins, sans-serif;
+  text-align: center;
+  font-size: 40px;
+  
 }
 
 .sliderItem > img {
-    width: 100%; 
-    height: 400px;
-    object-fit: cover;
+  width: 100%; 
+  height: 400px;
+  object-fit: cover;
 }
 /* Finish Hero */
 
 
 /* Start cardContainer Lastest Trips */
 
+.travellersTitle {
+  text-align: center;
+}
+
 .travellersContainer {
   max-width: 1200px;
   margin: auto;
-  padding: 5rem 1rem;
-  display: flex;
-  flex-wrap: wrap;
 }
 
-.travellersTitle {
-  font-size: 2.5rem;
-  font-weight: 600;
-  line-height: 3rem;
-  color: var(--text-dark);
-}
+
 
 img {
   width: 100%;
   display: flex;
 }
 
-body {
-  font-family: "Poppins", sans-serif;
-}
+
 
 .travellersGrid {
-  margin-top: 4rem;
+  padding: 20px;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  gap: 2rem;
+  gap: 30px;
+ 
+ 
 }
 
 .travellersCard {
-  border-radius: 5rem;
+  border-radius: 80px;
   overflow: hidden;
   box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.3);
+
 }
 
 .travellersCardContent {
   position: relative;
-  padding: 1rem;
+  padding: 16px;
   text-align: center;
   padding: 40px;
 }
@@ -158,30 +168,35 @@ body {
 
 .travellersCardContent h3 {
   padding-top: 10px;
-  margin-top: 1.5rem;
-  font-size: 1.2rem;
+  margin-top: 16px;
+  font-size: 18em;
   font-weight: 600;
   color: var(--text-dark);
 }
 
 .travellersCardContent p {
   font-weight: 500;
-  color: var(--text-light);
+  color: var(--text-dark);
 }
-
-
-
-
-
-
-
 /* Finish cardContainer Lastest Trips */
+
+/* Start Map "Location" */
+
+/* Finish Map "Location" */
+
+
+/* Start Subscribe Form */
+
+
+
+/* Finish Subscribe Form */
 
 
 
 footer {
-    display: block;
-    text-align: center ;
+  padding: 20px;
+  text-align: center ;
+  
 }
 
 
