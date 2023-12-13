@@ -1,9 +1,9 @@
 import { Route, Switch } from "wouter"
 
 import HomeView from "./views/HomeView"
-import TheTraveler from "./views/TheTraveler" 
-import AddLocation from "./views/AddLocation"
-import AboutUs from "./views/AboutUs"
+import TheTravelerView from "./views/TheTravelerView" 
+import AddLocationView from "./views/AddLocationView"
+import AboutUsView from "./views/AboutUsView"
 
 
 function App() {
@@ -18,15 +18,15 @@ function App() {
         </Route>
 
         <Route path="/thetraveler">
-          <TheTraveler/>
+          <TheTravelerView/>
         </Route>
 
         <Route path="/addlocation">
-          <AddLocation/>
+          <AddLocationView/>
         </Route>
 
         <Route path="/aboutus">
-          <AboutUs/>
+          <AboutUsView/>
         </Route>
 
       </Switch>

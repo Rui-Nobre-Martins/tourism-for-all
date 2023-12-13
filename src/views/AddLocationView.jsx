@@ -1,16 +1,15 @@
 import Footer from "../components/Footer"
 import NavegationBar from "../components/NavegationBar"
 
-
-function AboutUs() {
+function AddLocationView() {
     return(
         <>
         <NavegationBar/>
+        
 
-
-        <Footer/>
+        <Footer/>        
         </>
     )
 }
 
-export default AboutUs
+export default AddLocationView

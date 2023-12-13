@@ -4,10 +4,10 @@ import { Swiper, SwiperSlide} from "swiper/react"
 const data = [
 
   {id: "1", image: "/image/slider0.jpg"},
-  {id: "2", image: "/image/slider01.jpg"},
-  {id: "3", image: "/image/slider001.jpg"},
-  {id: "4", image: "/image/slider00001.jpg"},
-  {id: "3", image: "/image/slider10.jpg"}
+  {id: "2", image: "/image/slider0.jpg"},
+  {id: "3", image: "/image/slider0.jpg"},
+  {id: "4", image: "/image/slider0.jpg"},
+  {id: "3", image: "/image/slider0.jpg"}
   ]
 
 function Hero() {

@@ -2,14 +2,14 @@ import Footer from "../components/Footer"
 import NavegationBar from "../components/NavegationBar"
 
 
-function TheTraveler() {
+function TheTravelerView() {
     return(
         <>
         <NavegationBar/>
-    
+        
         <Footer/>
         </>
     )
 }
 
-export default TheTraveler
+export default TheTravelerView
