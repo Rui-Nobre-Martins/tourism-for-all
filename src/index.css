@@ -8,12 +8,12 @@
 
 
 :root {
-  --primary-color: #5c7cdb;
-  --primary-color-dark: #354e9c;
+  --primary-color: #74a4b3;
+  --primary-color-dark: #9fcad4;
   --text-dark: #0f172a;
   --text-light: #f9f9f9a4;
   --white: #ffffff;
-  --extra-light: #f1f5f9;
+  --extra-light: #a0b4ba;
 }
 
 
@@ -34,7 +34,7 @@
 
 }
 
-.navLogo a img{
+.navLogo img{
 width: auto;
 height: 60px;
 padding: 12px;
@@ -42,7 +42,7 @@ padding: 12px;
   
 }
 
-.navBar > ul {
+.navBar, .navLink {
   list-style: none;
   display: flex;
   align-items: center;
@@ -52,7 +52,7 @@ padding: 12px;
   color: black;
 }
 
-nav.Link, a {
+.navLink, a {
   text-decoration: none;
   color: var(--text-light);
   color: black;
@@ -181,7 +181,15 @@ img {
 /* Finish cardContainer Lastest Trips */
 
 /* Start Map "Location" */
+.mapLocation{
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
 
+.mapLocationImage {
+  padding: 50px;
+}
 /* Finish Map "Location" */
 
 
