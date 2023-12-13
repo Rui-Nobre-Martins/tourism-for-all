@@ -1,7 +1,14 @@
+import Footer from "../components/Footer"
+import NavegationBar from "../components/NavegationBar"
+
+
 function AboutUs() {
     return(
         <>
-        <h1>About Us</h1>
+        <NavegationBar/>
+
+
+        <Footer/>
         </>
     )
 }
