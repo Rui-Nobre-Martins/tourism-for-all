@@ -6,7 +6,7 @@ function TheTraveler() {
     return(
         <>
         <NavegationBar/>
-        <h1>The Traveler</h1>
+    
         <Footer/>
         </>
     )

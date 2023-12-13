@@ -6,7 +6,7 @@ function NavegationBar() {
         <div className="navBarFixed">
             <nav className="navBar">
                 <div className="navLogo">
-                    <img src="/public/image/favicon.png" alt="logo" />
+                    <img src="/public/image/favicon.png" alt="logo"/>
                 </div>
             <div className="navLink">
                 <Link href="/">Home</Link>
