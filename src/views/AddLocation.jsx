@@ -1,7 +1,13 @@
+import Footer from "../components/Footer"
+import NavegationBar from "../components/NavegationBar"
+
 function AddLocation() {
     return(
         <>
-        <h1>Add Location</h1>
+        <NavegationBar/>
+
+
+        <Footer/>        
         </>
     )
 }
