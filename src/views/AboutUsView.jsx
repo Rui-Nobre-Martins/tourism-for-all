@@ -8,9 +8,14 @@ function AboutUsView() {
         <NavegationBar/>
         
         <div className="aboutContainer">
-            <h1 className="aboutContainer">About us</h1>
-            <img src="/image/client-2.jpg" alt="" />
-            <p className="aboutContent">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quia asperiores nobis quaerat architecto accusamus similique soluta doloribus! Quo facere suscipit ducimus doloremque nihil illum nisi impedit nemo? Consequuntur, ut inventore.</p>
+            <div className="aboutTitle">
+                <h1>About us</h1>
+            </div>
+            <div className="aboutContent">
+                <img src="/image/aboutus1.jpg" alt="" />
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quia asperiores nobis quaerat architecto accusamus similique soluta doloribus! Quo facere suscipit ducimus doloremque nihil illum nisi impedit nemo? Consequuntur, ut inventore.</p>
+            </div>
+            
         </div>
 
         <Footer/>

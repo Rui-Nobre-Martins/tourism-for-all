@@ -2,8 +2,8 @@
   box-sizing: border-box;
   padding: 0px;
   margin: 0px; 
-  font-family: "Poppins", sans-serif;
-
+  font-family: "Poppins", sans-serif; 
+  /* change font???? */
 }
 
 
@@ -138,8 +138,6 @@ img {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 30px;
- 
- 
 }
 
 .travellersCard {
@@ -156,7 +154,6 @@ img {
 
 .travellersCardContent {
   position: relative;
-  padding: 16px;
   text-align: center;
   padding: 40px;
 }
@@ -194,6 +191,7 @@ img {
 
 .mapLocationImage {
   padding: 100px;
+  filter: drop-shadow(0px 0px 10px rgba(0, 0, 0, 0.3))
 }
 /* Finish Map "Location" */
 
@@ -206,25 +204,36 @@ img {
 
 footer {
   padding: 20px;
-  text-align: center ;
-  
+  text-align: center;  
 }
 
 
 /* Start AboutUs VIEW */
 
 .aboutContainer {
+  padding: 100px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.aboutTitle {
   padding: 40px;
 }
 
-
-
-.aboutContainer img {
-  width: 20%;
-  max-width: 1200px;
-  border-radius: 100%;
+.aboutContent {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
 }
 
+.aboutContent p {
+  margin-left: 20px;
+}
 
+.aboutContent img {
+  object-fit: contain;
+  border-radius: 10px;
+  width: 50%;
+}
 
 /* Finish AboutUs VIEW */
