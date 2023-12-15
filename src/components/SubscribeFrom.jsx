@@ -7,7 +7,7 @@ function SubscribeFrom() {
             <div className="formTipsContent">
                 <form>
                     <input type="email" placeholder="Email"/>
-                    <input type="submit" value="Send" />
+                    <input className="btnSubmit" type="submit" value="Send" />
                 </form>
             </div>
         </div>

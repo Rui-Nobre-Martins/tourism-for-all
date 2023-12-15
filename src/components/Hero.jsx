@@ -29,7 +29,6 @@ function Hero() {
                 ))}
               </Swiper>
             </div>
-            
           </div>
         </div>
         
