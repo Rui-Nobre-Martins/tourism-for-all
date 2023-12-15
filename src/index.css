@@ -1,7 +1,7 @@
 * {
   box-sizing: border-box;
   padding: 0px;
-  margin: 0px; 
+  margin: 0px;
   font-family: "Poppins", sans-serif; 
   /* change font???? */
 }
@@ -71,12 +71,8 @@ nav.Link, a:hover {
   color: #fff;
   background-color: var(--primary-color);
   cursor: pointer;
-  padding: 0.75rem 2rem;
-  outline: none;
-  border-width: initial;
+  padding: 12px 32px;
   border-style: none;
-  border-color: initial;
-  border-image: initial;
   border-radius: 32px;
   margin-right: 10px;
 }
@@ -203,18 +199,23 @@ img {
 }
 
 .formTipsTitle {
-  padding: 20px;
+  padding: 10px;
+  text-align: center;
 }
+
+.formTipsContent {
+  padding: 10px;
+  text-align: center;
+}
+
 
 /* Finish Subscribe Form */
 
 
 /* Start Footer  */
 footer {
-  position: fixed;
-  left: 0;
-  bottom: 0;
-  right: 0;
+  position: relative;
+  top: 100vh;
   width: 100%;
   background-color: #9fcad4;
   color: white;
@@ -229,7 +230,7 @@ footer {
 
 /* Start AboutUs VIEW */
 .aboutContainer {
-  padding: 100px;
+  padding: 50px;
   max-width: 1200px;
   margin: 0 auto;
 }
@@ -240,7 +241,6 @@ footer {
 
 .aboutContent {
   display: flex;
-  flex-direction: row;
   align-items: center;
 }
 
@@ -250,28 +250,44 @@ footer {
 
 .aboutContent img {
   border-radius: 10px;
-  width: 50%;
 }
 /* Finish AboutUs VIEW */
 
 
-/* Start ADD Location VIEW */
-  .formContainer {
-    padding: 100px;
-    max-width: 1200px;
-    margin: 0 auto;
+/* Start ADDLocation VIEW - FORM */
+.formContainer {
+  padding: 50px;
+  max-width: 1200px;
+  margin: 0 auto;
   }
 
-  .formTitle {
-    padding: 40px;
+.formTitle {
+  padding: 40px;
   }
 
-  .formContent {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-  }
- 
+
+
+.formContent input, textarea {
+  display: flex;
+  width: 50%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.btnSubmit {
+  color: white;
+  cursor: pointer;
+  background-color: var(--primary-color);
+}
+
+.btnSubmit:hover {
+  background-color: var(--primary-color-dark);
+}
+
+
+
 
 /* Finish ADD Location VIEW */
+

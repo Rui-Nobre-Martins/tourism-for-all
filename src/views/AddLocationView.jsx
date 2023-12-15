@@ -17,16 +17,16 @@ function AddLocationView() {
                     <label>City</label>
                     <input type="text" placeholder="Add new City"></input>
 
-                    <label>Check-in date</label>
+                    <label>Check-in</label>
                     <input type="date" name="start" id="start" />
 
-                    <label>Check-out date</label>
+                    <label>Check-out</label>
                     <input type="date" name="start" id="start" />
 
-                    <label>Why this place</label>
+                    <label>Why this place?</label>
                     <textarea/>
 
-                    <input type="submit" value="Save" />
+                    <input className="btnSubmit" type="submit" value="Submit" />
                 </form>
             </div>
         </div>
