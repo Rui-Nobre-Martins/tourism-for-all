@@ -2,22 +2,17 @@
 function SubscribeFrom() {
     return(
         <>
-          <div className="formContainer">
-            <div className="formTitle">
-                <h3>Newsletter</h3>
-                <p>Recebe info sobre trips(MUDAR O TEXTO)</p>
+        <div className="formTipsContainer">
+            <div className="formTipsTitle"><h1>Subscribe for more Trvl Tips</h1></div>
+            <div className="formTipsContent">
+                <form>
+                    <label>Email</label>
+                    <input type="email" placeholder="Email"/>
+
+                    <input type="submit" value="Send" />
+                </form>
             </div>
-
-            <form>
-                <div className="formContent">
-                    <input type="text" placeholder="Enter your Email" />
-                </div>
-                <div className="formButton">
-                    <button type="submit">Subscribe</button>
-                </div>
-
-            </form>
-          </div>
+        </div>
         </>
     )
 }

@@ -13,7 +13,6 @@ function HomeView() {
         <Hero/>
         <CardContainerTrip/>
         <MapLocation/>
-        <SubscribeFrom/>
         <Footer/>
         </>
     )
