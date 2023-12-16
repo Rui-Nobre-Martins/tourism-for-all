@@ -3,7 +3,7 @@ import Footer from "../components/Footer"
 import Hero from "../components/Hero"
 import MapLocation from "../components/MapLocation"
 import NavegationBar from "../components/NavegationBar"
-import SubscribeFrom from "../components/SubscribeFrom"
+
 
 
 function HomeView() {
