@@ -271,8 +271,6 @@ footer {
   padding: 40px;
   }
 
-
-
 .formContent input, textarea {
   display: flex;
   width: 50%;
@@ -291,9 +289,32 @@ footer {
 .btnSubmit:hover {
   background-color: var(--primary-color-dark);
 }
-
-
-
-
 /* Finish ADD Location VIEW */
 
+
+
+/* Start The TravelerView */
+
+.sliderTraveler {
+  padding: 80px;
+  }
+  
+  .sliderContainer {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+      
+  }
+  .silderTitle {
+    text-align: center;
+    font-size: 40px;
+    
+  }
+  
+  .sliderItem > img {
+    width: 100%; 
+    height: 400px;
+    object-fit: cover;
+  }
+
+/* Finish  The TravelerView */

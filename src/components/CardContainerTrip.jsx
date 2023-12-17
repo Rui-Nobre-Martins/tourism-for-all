@@ -6,35 +6,35 @@ function CardContainerTrip () {
         <div className="travellersContainer">
           <div className="travellersGrid">
             <div className="travellersCard">
-              <img src="image/traveller-1.jpg" alt="traveller" />
+              <img src="image/dubai.jpg" alt="traveller" />
               <div className="travellersCardContent">
-                <img src="image/client-2.jpg" alt="client" />
-                <h4>Name</h4>
-                <p>City</p>
+                <img src="image/ruiProfile1.png" alt="Foto de perfil do rui" />
+                <h4>Rui</h4>
+                <p>Dubai</p>
               </div>
             </div>
             <div className="travellersCard">
-              <img src="image/traveller-1.jpg" alt="traveller" />
+              <img src="image/london.jpg" alt="traveller" />
               <div className="travellersCardContent">
-                <img src="image/client-2.jpg" alt="client" />
-                <h4>Name</h4>
-                <p>City</p>
+                <img src="image/ruiProfile1.png" alt="client" />
+                <h4>Rui</h4>
+                <p>London</p>
               </div>
             </div>
             <div className="travellersCard">
-              <img src="image/traveller-1.jpg" alt="traveller" />
+              <img src="image/paris.jpg" alt="traveller" />
               <div className="travellersCardContent">
-                <img src="image/client-2.jpg" alt="client" />
-                <h4>Name</h4>
-                <p>City</p>
+                <img src="image/ruiProfile1.png" alt="client" />
+                <h4>Rui</h4>
+                <p>Madrid</p>
               </div>
             </div>
             <div className="travellersCard">
-              <img src="image/traveller-1.jpg" alt="traveller" />
+              <img src="image/singapure.jpg" alt="traveller" />
               <div className="travellersCardContent">
-                <img src="image/client-2.jpg" alt="client" />
-                <h4>Name</h4>
-                <p>City</p>
+                <img src="image/ruiProfile1.png" alt="client" />
+                <h4>Rui</h4>
+                <p>Lisbon</p>
               </div>
             </div>
           </div>
