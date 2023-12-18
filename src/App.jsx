@@ -10,7 +10,6 @@ function App() {
   
   return (
     <>
-    {/* Start Navegation Bar */}
     <Switch>
 
         <Route path="/">
@@ -30,8 +29,6 @@ function App() {
         </Route>
 
       </Switch>
-   
-      
     </>
   )
 }

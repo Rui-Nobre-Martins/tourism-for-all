@@ -38,8 +38,7 @@
 width: auto;
 height: 60px;
 padding: 12px;
-  
-  
+cursor: pointer;  
 }
 
 .navBar, .navLink {
@@ -63,7 +62,6 @@ nav.Link, a:hover {
   color: var(--primary-color);
     
 }
-
 
 .btnContact {
   font-size: 16px;
@@ -101,7 +99,7 @@ padding: 80px;
   
 }
 
-.sliderItem > img {
+.heroContainer > img {
   width: 100%; 
   height: 400px;
   object-fit: cover;
@@ -119,8 +117,6 @@ padding: 80px;
   max-width: 1200px;
   margin: auto;
 }
-
-
 
 img {
   width: 100%;
@@ -140,13 +136,15 @@ img {
   border-radius: 80px;
   overflow: hidden;
   box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.3);
+  -webkit-transition: -webkit-transform .5s ease;
+   transition: transform .5s ease;
 }
 
-/* test
+
 .travellersCard:hover {
-  transition-duration: 2s;
-  transition-property: margin-right, color;
-} */
+  -webkit-transform: scale(1.1);
+   transform: scale(1.1);
+}
 
 .travellersCardContent {
   position: relative;
@@ -167,7 +165,7 @@ img {
 .travellersCardContent h3 {
   padding-top: 10px;
   margin-top: 16px;
-  font-size: 18em;
+  font-size: 18px;
   font-weight: 600;
   color: var(--text-dark);
 }
@@ -204,14 +202,15 @@ img {
 }
 
 .formTipsContent input, textarea {
-  display: flex;
-  justify-content: center;
+  display: block;
   width: 50%;
   padding: 12px 20px;
   margin: 8px 0;
   border: 1px solid #ccc;
   border-radius: 5px;
 }
+
+
 
 
 /* Finish Subscribe Form */
@@ -246,16 +245,19 @@ footer {
 
 .aboutContent {
   display: flex;
+  flex-direction: row;
   align-items: center;
 }
 
 .aboutContent p {
+  display: flex;
+  flex-wrap: wrap;
   margin-left: 20px;
+  max-width: 900px;
 }
 
 .aboutContent img {
   border-radius: 10px;
-  width: 25%;
 }
 /* Finish AboutUs VIEW */
 
@@ -318,3 +320,7 @@ footer {
   }
 
 /* Finish  The TravelerView */
+
+
+
+
