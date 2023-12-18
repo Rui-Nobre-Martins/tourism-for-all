@@ -1,6 +1,5 @@
 import NavegationBar from "../components/NavegationBar"
 import Slider from "../components/Slider"
-
 import Footer from "../components/Footer"
 
 

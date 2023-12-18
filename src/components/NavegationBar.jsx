@@ -10,7 +10,7 @@ function NavegationBar() {
                 </div>
             <div className="navLink">
                 <Link href="/">Home</Link>
-                <Link href="/thetraveler">The Traveler</Link>
+                {/* <Link href="/thetraveler">The Traveler</Link> */}
                 <Link href="/addlocation">Add Location</Link>
                 <Link href="/aboutus">About us</Link>
             </div>
