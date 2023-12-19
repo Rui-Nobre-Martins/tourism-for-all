@@ -1,0 +1,65 @@
+[
+    {
+        "id": 1,
+        "city": "Dubai",
+        "country": "Emirados Árabes Unidos",
+        "from": "01/02/2023",
+        "to": "15/02/2023",
+        "weather_city": "Dubai",
+        "image": "image/dubai.jpg",
+
+        "description": "A city profile Dubai is located on the eastern coast of the Arabian Peninsula in the southwest corner of the Arabian Gulf. Dubai is the second largest emirate in the United Arab Emirates (UAE) sharing borders with Abu Dhabi in the south, Sharjah in the northeast, and the Sultanate of Oman in the southeast.",
+        
+        "slider": [
+            {"slider_img":"image/dubai.jpg"}
+        ]
+    },
+
+    {
+        "id": 2,
+        "city": "London",
+        "country": "United Kingdom",
+        "from": "02/03/2023",
+        "to": "17/03/2023",
+        "weather_city": "London",
+        "image": "image/london.jpg",
+
+        "description": "London is the capital of England and the United Kingdom and one of the largest and most important cities in the world. The area was originally settled by early hunter gatherers around 6,000 B.C., and researchers have found evidence of Bronze Age bridges and Iron Age forts near the River Thames.",
+        
+        "slider": [
+            {"slider_img":"image/london.jpg"}
+        ]
+    },
+
+    {
+        "id": 3,
+        "city": "Paris",
+        "country": "France",
+        "from": "08/05/2023",
+        "to": "20/05/2023",
+        "weather_city": "Madrid",
+        "image": "image/paris.jpg",
+
+        "description": "London is the capital of England and the United Kingdom and one of the largest and most important cities in the world. The area was originally settled by early hunter gatherers around 6,000 B.C., and researchers have found evidence of Bronze Age bridges and Iron Age forts near the River Thames.",
+        
+        "slider": [
+            {"slider_img":"image/paris.jpg"}
+        ]
+    },
+
+    {
+        "id": 4,
+        "city": "Singapore",
+        "country": "Republic of Singapore",
+        "from": "30/07/2023",
+        "to": "10/08/2023",
+        "weather_city": "Singapore",
+        "image": "image/singapure.jpg",
+
+        "description": "London is the capital of England and the United Kingdom and one of the largest and most important cities in the world. The area was originally settled by early hunter gatherers around 6,000 B.C., and researchers have found evidence of Bronze Age bridges and Iron Age forts near the River Thames.",
+        
+        "slider": [
+            {"slider_img":"image/singapure.jpg"}
+        ]
+    }
+  ]

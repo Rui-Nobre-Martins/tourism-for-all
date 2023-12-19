@@ -11,7 +11,6 @@ function Slider() {
     return(
         <>
         <div className="sliderTraveler">
-            <h1 className="silderTitle">The Traveler</h1>
                 <div className="sliderContainer">
                     <div>
                         <Swiper

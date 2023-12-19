@@ -6,35 +6,51 @@ function CardContainerTrip () {
         <div className="travellersContainer">
           <div className="travellersGrid">
             <div className="travellersCard">
-              <img src="image/dubai.jpg" alt="traveller" />
+              <a href="/">
+                <img src="image/dubai.jpg" alt="traveller" />
+                </a>
               <div className="travellersCardContent">
-                <img src="image/ruiProfile1.png" alt="Foto de perfil do rui" />
-                <h4>Rui</h4>
-                <p>Dubai</p>
+                <a href="">
+                  <img src="image/ruiProfile1.png" alt="Foto de perfil do rui" />
+                  <h4>Dubai</h4>
+                  <p>See More...</p>
+                </a>
               </div>
             </div>
             <div className="travellersCard">
-              <img src="image/london.jpg" alt="traveller" />
+              <a href="">
+                <img src="image/london.jpg" alt="traveller" />
+                </a>
               <div className="travellersCardContent">
-                <img src="image/ruiProfile1.png" alt="client" />
-                <h4>Rui</h4>
-                <p>London</p>
+                <a href="">
+                  <img src="image/ruiProfile1.png" alt="client" />
+                  <h4>London</h4>
+                  <p>See More...</p>
+                  </a>
               </div>
             </div>
             <div className="travellersCard">
-              <img src="image/paris.jpg" alt="traveller" />
+              <a href="">
+                <img src="image/paris.jpg" alt="traveller" />
+              </a>
               <div className="travellersCardContent">
-                <img src="image/ruiProfile1.png" alt="client" />
-                <h4>Rui</h4>
-                <p>Madrid</p>
+                <a href="">
+                  <img src="image/ruiProfile1.png" alt="client" />
+                  <h4>Paris</h4>
+                  <p>See More...</p>
+                </a>
               </div>
             </div>
             <div className="travellersCard">
-              <img src="image/singapure.jpg" alt="traveller" />
+              <a href="">
+                <img src="image/singapure.jpg" alt="traveller" />
+              </a>
               <div className="travellersCardContent">
-                <img src="image/ruiProfile1.png" alt="client" />
-                <h4>Rui</h4>
-                <p>Lisbon</p>
+                <a href="">
+                  <img src="image/ruiProfile1.png" alt="client" />
+                  <h4>Singapore</h4>
+                  <p>See More...</p>
+                </a>
               </div>
             </div>
           </div>
