@@ -12,7 +12,7 @@ function DetailView() {
         <>
         <NavegationBar/>
         <Slider/>
-        <h1>Trip Detail</h1>
+        
 
         <Footer/>
         </>
