@@ -1,3 +1,4 @@
+import { Link } from "wouter"
 
 function CardContainerTrip () {
     return(
@@ -6,51 +7,51 @@ function CardContainerTrip () {
         <div className="travellersContainer">
           <div className="travellersGrid">
             <div className="travellersCard">
-              <a href="/">
+              <Link href="/details/">
                 <img src="image/dubai.jpg" alt="traveller" />
-                </a>
+                </Link>
               <div className="travellersCardContent">
-                <a href="">
+                <Link href="">
                   <img src="image/ruiProfile1.png" alt="Foto de perfil do rui" />
                   <h4>Dubai</h4>
                   <p>See More...</p>
-                </a>
+                </Link>
               </div>
             </div>
             <div className="travellersCard">
-              <a href="">
+              <Link href="">
                 <img src="image/london.jpg" alt="traveller" />
-                </a>
+                </Link>
               <div className="travellersCardContent">
-                <a href="">
+                <Link href="">
                   <img src="image/ruiProfile1.png" alt="client" />
                   <h4>London</h4>
                   <p>See More...</p>
-                  </a>
+                  </Link>
               </div>
             </div>
             <div className="travellersCard">
-              <a href="">
+              <Link href="">
                 <img src="image/paris.jpg" alt="traveller" />
-              </a>
+              </Link>
               <div className="travellersCardContent">
-                <a href="">
+                <Link href="">
                   <img src="image/ruiProfile1.png" alt="client" />
                   <h4>Paris</h4>
                   <p>See More...</p>
-                </a>
+                </Link>
               </div>
             </div>
             <div className="travellersCard">
-              <a href="">
+              <Link href="">
                 <img src="image/singapure.jpg" alt="traveller" />
-              </a>
+              </Link>
               <div className="travellersCardContent">
-                <a href="">
+                <Link href="">
                   <img src="image/ruiProfile1.png" alt="client" />
                   <h4>Singapore</h4>
                   <p>See More...</p>
-                </a>
+                </Link>
               </div>
             </div>
           </div>
