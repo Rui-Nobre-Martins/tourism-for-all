@@ -7,50 +7,56 @@ function CardContainerTrip () {
         <div className="travellersContainer">
           <div className="travellersGrid">
             <div className="travellersCard">
-              <Link href="/details/">
+              <Link href="/details/1">
                 <img src="image/dubai.jpg" alt="traveller" />
                 </Link>
               <div className="travellersCardContent">
-                <Link href="">
+                <Link href="/details/1">
                   <img src="image/ruiProfile1.png" alt="Foto de perfil do rui" />
-                  <h4>Dubai</h4>
-                  <p>See More...</p>
+                  <h4>Rui</h4>
+                  <p>Dubai</p>
                 </Link>
               </div>
             </div>
+
+
             <div className="travellersCard">
-              <Link href="">
+              <Link href="/details/2">
                 <img src="image/london.jpg" alt="traveller" />
                 </Link>
               <div className="travellersCardContent">
-                <Link href="">
+                <Link href="/details/2">
                   <img src="image/ruiProfile1.png" alt="client" />
-                  <h4>London</h4>
-                  <p>See More...</p>
+                  <h4>Rui</h4>
+                  <p>London</p>
                   </Link>
               </div>
             </div>
+
+
             <div className="travellersCard">
-              <Link href="">
+              <Link href="/details/3">
                 <img src="image/paris.jpg" alt="traveller" />
               </Link>
               <div className="travellersCardContent">
-                <Link href="">
+                <Link href="/details/3">
                   <img src="image/ruiProfile1.png" alt="client" />
-                  <h4>Paris</h4>
-                  <p>See More...</p>
+                  <h4>Rui</h4>
+                  <p>Paris</p>
                 </Link>
               </div>
             </div>
+
+
             <div className="travellersCard">
-              <Link href="">
+              <Link href="/details/4">
                 <img src="image/singapure.jpg" alt="traveller" />
               </Link>
               <div className="travellersCardContent">
-                <Link href="">
+                <Link href="/details/4">
                   <img src="image/ruiProfile1.png" alt="client" />
-                  <h4>Singapore</h4>
-                  <p>See More...</p>
+                  <h4>Rui</h4>
+                  <p>Singapore</p>
                 </Link>
               </div>
             </div>

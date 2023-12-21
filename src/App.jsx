@@ -24,8 +24,8 @@ function App() {
           <AboutUsView/>
         </Route>
 
-        <Route path="/detail">
-          <DetailView/>
+        <Route path="/details/:id">
+          {(params) => <DetailView id={params.id}/>}
         </Route>
 
       </Switch>

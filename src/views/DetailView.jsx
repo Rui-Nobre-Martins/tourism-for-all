@@ -4,13 +4,10 @@ import NavegationBar from "../components/NavegationBar"
 import Slider from "../components/Slider"
 import Footer from "../components/Footer"
 
+function DetailView({id}) {
 
-
-
-function DetailView() {
-
-    const [citiesinfo, setCitiesInfo] = useState({})
-    const [countriesInfo, setCountriesInfo] = useState ({})
+    const [cityInfo, setCityInfo] = useState({})
+    
 
     useEffect(function(){
         (async function(){
@@ -24,16 +21,31 @@ function DetailView() {
                 return cities.id == id;
             });
             console.log(foundElement);
-            setCitiesInfo(foundElement);
-            setCountriesInfo(foundElement);
+            setCityInfo(foundElement);
+            
+            
         })();
     },[]);
   return(
         <>
         <NavegationBar/>
         <Slider/>
-        
+        <div className="detailTitle">
+            <h1>{cityInfo.city}</h1>
+            <h2>{cityInfo.country}</h2>
+        </div>
+        <div className="detailDate">
+            <p>From: {cityInfo.from}</p>
+            <p>To: {cityInfo.to}</p>
+        </div>
 
+        <div className="detailDescription">
+            <p>{cityInfo.description}</p>
+        </div>
+        
+        <div className="detailimage">
+        <img src={cityInfo.image}/> 
+        </div>
         <Footer/>
         </>
     )
