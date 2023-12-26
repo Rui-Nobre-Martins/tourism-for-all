@@ -196,9 +196,14 @@ img {
   text-align: center;
 }
 
-.formTipsContent input, textarea {
-  display: block;
-  width: 50%;
+.formTipsContent{
+  display: flex;
+  justify-content: center;
+}
+
+input, textarea {
+  display: flex;
+  width: 300px;
   padding: 12px 20px;
   margin: 8px 0;
   border: 1px solid #ccc;
@@ -235,24 +240,25 @@ footer {
 }
 
 .aboutTitle {
+  text-align: center;
   padding: 40px;
 }
 
 .aboutContent {
   display: flex;
-  flex-direction: row;
   align-items: center;
+  
 }
-
-.aboutContent p {
-  display: flex;
+.aboutText {
+  padding: 20px;
+  align-items: center;
+  display: flex; 
   flex-wrap: wrap;
-  margin-left: 20px;
-  max-width: 900px;
 }
 
-.aboutContent img {
+.aboutImage {
   border-radius: 10px;
+  width: 200px;
 }
 /* Finish AboutUs VIEW */
 
@@ -266,11 +272,18 @@ footer {
 
 .formTitle {
   padding: 40px;
-  }
+  text-align: center;
+}
 
-.formContent input, textarea {
+.formContent {
   display: flex;
-  width: 50%;
+  justify-content: center;
+}
+
+ input, textarea {
+  display: flex;
+  justify-content: center;
+  width: 300px;
   padding: 12px 20px;
   margin: 8px 0;
   border: 1px solid #ccc;
@@ -278,14 +291,17 @@ footer {
 }
 
 .btnSubmit {
+  text-align: center;
   color: white;
   cursor: pointer;
   background-color: var(--primary-color);
 }
 
 .btnSubmit:hover {
+  
   background-color: var(--primary-color-dark);
 }
+
 /* Finish ADD Location VIEW */
 
 
@@ -293,7 +309,7 @@ footer {
 /* Start The TravelerView */
 
 .sliderTraveler {
-  padding: 80px;
+  padding: 20px;
   }
   
   .sliderContainer {
@@ -302,19 +318,36 @@ footer {
     margin: 0 auto;
       
   }
-  .silderTitle {
-    text-align: center;
-    font-size: 40px;
-    
-  }
+
   
   .sliderItem > img {
     width: 100%; 
     height: 400px;
-    object-fit: cover;
+    object-fit: contain;
   }
 
 /* Finish  The TravelerView */
+
+/* Start The DetailView */
+
+.detailContainer {
+  padding: 100px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.detailTitle {
+  text-align: center;
+  padding: 5px;
+}
+
+.detailDescription {
+  padding: 10px;
+  width: 400px;
+  height: 400px;
+}
+
+/* Finish The DetailView */
 
 
 

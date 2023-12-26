@@ -19,7 +19,7 @@ function AddLocationView() {
         <NavegationBar/>
         
         <div className="formContainer">
-            <div className="formTitle"><h1>Suggest a New Location 📍</h1></div>
+            <h1 className="formTitle">Suggest a New Location 📍</h1>
             <div className="formContent">
 
                 <form onSubmit={handleSubmit}>
@@ -30,10 +30,10 @@ function AddLocationView() {
                     <input type="text" name="city" placeholder="Add new City"></input>
 
                     <label>From</label>
-                    <input type="date" name="from" id="start" />
+                    <input type="date" name="from"/>
 
                     <label>To</label>
-                    <input type="date" name="to" id="start" />
+                    <input type="date" name="to"  />
 
                     <label>Why this place?</label>
                     <textarea name="text"/>

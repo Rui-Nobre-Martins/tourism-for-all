@@ -10,7 +10,7 @@ function SubscribeFrom() {
     return(
         <>
         <div className="formTipsContainer">
-            <div className="formTipsTitle"><h1>Subscribe for more Trvl Tips</h1></div>
+            <h1 className="formTipsTitle">Subscribe for more Trvl Tips</h1>
             <div className="formTipsContent">
 
                 <form onSubmit={handleSubmit}>
