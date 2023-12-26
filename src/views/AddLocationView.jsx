@@ -1,8 +1,19 @@
 import Footer from "../components/Footer"
 import NavegationBar from "../components/NavegationBar"
-import SubscribeFrom from "../components/SubscribeFrom"
+
 
 function AddLocationView() {
+
+    const handleSubmit = (e) =>{
+        e.preventDefault();
+        const inputCountry = e.target.country.value;
+        const inputCity = e.target.city.value;
+        const inputFrom = e.target.from.value;
+        const inputTo = e.target.to.value;
+        const textarea = e.target.text.value;
+        console.log(" Country: " + inputCountry,"\n","City: " + inputCity,"\n", "From: " + inputFrom,"\n", "to: " + inputTo,"\n", "Why this place? " + textarea);
+    }
+
     return(
         <>
         <NavegationBar/>
@@ -10,21 +21,22 @@ function AddLocationView() {
         <div className="formContainer">
             <div className="formTitle"><h1>Suggest a New Location 📍</h1></div>
             <div className="formContent">
-                <form>
+
+                <form onSubmit={handleSubmit}>
                     <label>Country</label>
-                    <input type="text" placeholder="New Country"/>
+                    <input type="text" name="country" placeholder="New Country"/>
 
                     <label>City</label>
-                    <input type="text" placeholder="Add new City"></input>
+                    <input type="text" name="city" placeholder="Add new City"></input>
 
-                    <label>Check-in</label>
-                    <input type="date" name="start" id="start" />
+                    <label>From</label>
+                    <input type="date" name="from" id="start" />
 
-                    <label>Check-out</label>
-                    <input type="date" name="start" id="start" />
+                    <label>To</label>
+                    <input type="date" name="to" id="start" />
 
                     <label>Why this place?</label>
-                    <textarea/>
+                    <textarea name="text"/>
 
                     <input className="btnSubmit" type="submit" value="Submit" />
                 </form>

@@ -26,6 +26,7 @@ function DetailView({id}) {
             
         })();
     },[]);
+    
   return(
         <>
         <NavegationBar/>
