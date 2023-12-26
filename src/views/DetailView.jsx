@@ -32,20 +32,23 @@ function DetailView({id}) {
         <NavegationBar/>
         
         <div className="detailContainer">
-            <div className="detailTitle">
-                <h1>{cityInfo.city}</h1>
-                <h2>{cityInfo.country}</h2>
-                <p>From: {cityInfo.from}</p>
-                <p>To: {cityInfo.to}</p>
-            </div>
+            <div>
+                <div className="detailTitle">
+                    <h1>{cityInfo.city}</h1>
+                    <h2>{cityInfo.country}</h2>
+                    <p>From: {cityInfo.from}</p>
+                    <p>To: {cityInfo.to}</p>
+                </div>
 
-            <Slider/>
+                <Slider/>
 
-            <div className="detailDescription">
-                <p>{cityInfo.description}</p>
-                <img src={cityInfo.image}/> 
+                <div className="detailContent">
+                    <p className="detailContentText">{cityInfo.description}</p>
+                    <img className="detailContentImage" src={cityInfo.image}/> 
+                </div>
             </div>
         </div>
+            
         <Footer/>
         </>
     )
