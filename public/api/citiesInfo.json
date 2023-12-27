@@ -5,10 +5,19 @@
         "country": "Emirados Árabes Unidos",
         "from": "01/02/2023",
         "to": "15/02/2023",
+
         "weather_city": "Dubai",
+        "weather_temp": "26°C",
+        "weather_wind": "5 km/h",
+        "weather_humidity": "62%",
+
+        "weather_img_clear": "/image/clear.png",
+        "weather_img_wind": "/image/wind.png",
+        "weather_img_humidity": "/image/humidity.png",
+
         "image": "/image/dubai.jpg",
 
-        "description": "A city profile Dubai is located on the eastern coast of the Arabian Peninsula in the southwest corner of the Arabian Gulf. Dubai is the second largest emirate in the United Arab Emirates (UAE) sharing borders with Abu Dhabi in the south, Sharjah in the northeast, and the Sultanate of Oman in the southeast.",
+        "description": "Dubai is the most populous city in the United Arab Emirates (UAE) and the capital of the Emirate of Dubai the most populated of the countrys seven emirates. Established in the 18th century as a small fishing village Dubai grew into a regional trading hub in the early 20th century and grew rapidly in the late 20th and early 21st centuries with a focus on tourism and luxury.[10] It has the second-most five-star hotels in the world[11] and boasts the tallest building in the world the Burj Khalifa which is 828 metres (2.717 ft) tall. ",
         
         "slider": [
             {"slider_img":"/image/dubai.jpg"},
@@ -22,10 +31,19 @@
         "country": "United Kingdom",
         "from": "02/03/2023",
         "to": "17/03/2023",
+
         "weather_city": "London",
+        "weather_temp": "12°C",
+        "weather_wind": "21 km/h",
+        "weather_humidity": "87%",
+
+        "weather_img_clear": "/image/clouds.png",
+        "weather_img_wind": "/image/wind.png",
+        "weather_img_humidity": "/image/humidity.png",
+
         "image": "/image/london.jpg",
 
-        "description": "London is the capital of England and the United Kingdom and one of the largest and most important cities in the world. The area was originally settled by early hunter gatherers around 6,000 B.C., and researchers have found evidence of Bronze Age bridges and Iron Age forts near the River Thames.",
+        "description": "The City of London, widely referred to simply as the City, is a city, ceremonial county and local government district that contains the ancient centre, and constitutes, alongside Canary Wharf, the primary central business district (CBD) of London and one of the leading financial centres of the world. It constituted most of London from its settlement by the Romans in the 1st century AD to the Middle Ages, but the modern area referred to as London has since grown far beyond the City of London boundary. The City is now only a small part of the metropolis of Greater London, though it remains a notable part of central London. Administratively, the City of London is not one of the London boroughs, a status reserved for the other 32 districts (including Greater London's only other city, the City of Westminster). It is also a separate ceremonial county, being an enclave surrounded by Greater London, and is the smallest ceremonial county in England. ",
         
         "slider": [
             {"slider_img":"/image/london.jpg"}
@@ -38,10 +56,19 @@
         "country": "France",
         "from": "08/05/2023",
         "to": "20/05/2023",
-        "weather_city": "Madrid",
+
+        "weather_city": "Paris",
+        "weather_temp": "11°C",
+        "weather_wind": "13 km/h",
+        "weather_humidity": "48%",
+
+        "weather_img_clear": "/image/clear.png",
+        "weather_img_wind": "/image/wind.png",
+        "weather_img_humidity": "/image/humidity.png",
+        
         "image": "/image/paris.jpg",
 
-        "description": "London is the capital of England and the United Kingdom and one of the largest and most important cities in the world. The area was originally settled by early hunter gatherers around 6,000 B.C., and researchers have found evidence of Bronze Age bridges and Iron Age forts near the River Thames.",
+        "description": "Paris is the capital and most populous city of France. With an official estimated population of 2,102,650 residents as of 1 January 2023 in an area of more than 105 km2 (41 sq mi), Paris is the fourth-most populated city in the European Union and the 30th most densely populated city in the world in 2022. Since the 17th century, Paris has been one of the world's major centres of finance, diplomacy, commerce, culture, fashion, and gastronomy. For its leading role in the arts and sciences, as well as its early and extensive system of street lighting, in the 19th century, it became known as the City of Light. ",
         
         "slider": [
             {"slider_img":"/image/paris.jpg"}
@@ -54,10 +81,19 @@
         "country": "Republic of Singapore",
         "from": "30/07/2023",
         "to": "10/08/2023",
+
         "weather_city": "Singapore",
+        "weather_temp": "26°C",
+        "weather_wind": "8 km/h",
+        "weather_humidity": "92%",
+
+        "weather_img_clear": "/image/mist.png",
+        "weather_img_wind": "/image/wind.png",
+        "weather_img_humidity": "/image/humidity.png",
+
         "image": "/image/singapure.jpg",
 
-        "description": "London is the capital of England and the United Kingdom and one of the largest and most important cities in the world. The area was originally settled by early hunter gatherers around 6,000 B.C., and researchers have found evidence of Bronze Age bridges and Iron Age forts near the River Thames.",
+        "description": "Singapore's history dates back at least eight hundred years, having been a maritime emporium known as Temasek and subsequently a major constituent part of several successive thalassocratic empires. Its contemporary era began in 1819, when Stamford Raffles established Singapore as an entrepôt trading post of the British Empire. In 1867, the colonies in Southeast Asia were reorganised, and Singapore came under the direct control of Britain as part of the Straits Settlements. During World War II, Singapore was occupied by Japan in 1942 and returned to British control as a separate Crown colony following Japan's surrender in 1945. Singapore gained self-governance in 1959 and, in 1963, became part of the new federation of Malaysia, alongside Malaya, North Borneo, and Sarawak. Ideological differences, most notably the perceived encroachment of the egalitarian Malaysian political ideology led by Lee Kuan Yew into the other constituent entities of Malaysia—at the perceived expense of the bumiputera and the policies of Ketuanan Melayu—eventually led to Singapore's expulsion from the federation two years later; Singapore became an independent sovereign country in 1965. ",
         
         "slider": [
             {"slider_img":"/image/singapure.jpg"}
