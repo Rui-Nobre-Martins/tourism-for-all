@@ -47,7 +47,32 @@ function DetailView({id}) {
                     <img className="detailContentImage" src={cityInfo.image}/> 
                 </div>
             </div>
-        </div>
+
+            <div className="cardWeather">
+                <div className="weather">
+                    <img className="weatherIcon" src={cityInfo.weather_img_sky} />
+                    <h1 className="temp">{cityInfo.weather_temp}</h1>
+                    <h2 className="city">{cityInfo.city}</h2>
+                        <div className="details">
+                            <div className="col">
+                                <img src={cityInfo.weather_img_humidity} />
+                            <div>
+                                <p className="humidity">{cityInfo.weather_humidity}</p>
+                                <p>Humidity</p>
+                            </div>
+                            </div>
+                            <div className="col">
+                                <img src={cityInfo.weather_img_wind} />
+                            <div>
+                                <p className="wind">{cityInfo.weather_wind}</p>
+                                <p>Wind Speed</p>
+                            </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
             
         <Footer/>
         </>

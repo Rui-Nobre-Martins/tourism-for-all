@@ -1,4 +1,5 @@
 import Footer from "../components/Footer"
+import MapLocation from "../components/MapLocation";
 import NavegationBar from "../components/NavegationBar"
 
 
@@ -42,6 +43,8 @@ function AddLocationView() {
                 </form>
             </div>
         </div>
+
+        <MapLocation/>
 
 
         <Footer/>        

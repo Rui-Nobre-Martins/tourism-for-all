@@ -6,12 +6,11 @@
         "from": "01/02/2023",
         "to": "15/02/2023",
 
-        "weather_city": "Dubai",
         "weather_temp": "26°C",
         "weather_wind": "5 km/h",
         "weather_humidity": "62%",
 
-        "weather_img_clear": "/image/clear.png",
+        "weather_img_sky": "/image/clear.png",
         "weather_img_wind": "/image/wind.png",
         "weather_img_humidity": "/image/humidity.png",
 
@@ -32,12 +31,11 @@
         "from": "02/03/2023",
         "to": "17/03/2023",
 
-        "weather_city": "London",
         "weather_temp": "12°C",
         "weather_wind": "21 km/h",
         "weather_humidity": "87%",
 
-        "weather_img_clear": "/image/clouds.png",
+        "weather_img_sky": "/image/clouds.png",
         "weather_img_wind": "/image/wind.png",
         "weather_img_humidity": "/image/humidity.png",
 
@@ -57,12 +55,11 @@
         "from": "08/05/2023",
         "to": "20/05/2023",
 
-        "weather_city": "Paris",
         "weather_temp": "11°C",
         "weather_wind": "13 km/h",
         "weather_humidity": "48%",
 
-        "weather_img_clear": "/image/clear.png",
+        "weather_img_sky": "/image/clear.png",
         "weather_img_wind": "/image/wind.png",
         "weather_img_humidity": "/image/humidity.png",
         
@@ -82,12 +79,11 @@
         "from": "30/07/2023",
         "to": "10/08/2023",
 
-        "weather_city": "Singapore",
         "weather_temp": "26°C",
         "weather_wind": "8 km/h",
         "weather_humidity": "92%",
 
-        "weather_img_clear": "/image/mist.png",
+        "weather_img_sky": "/image/mist.png",
         "weather_img_wind": "/image/wind.png",
         "weather_img_humidity": "/image/humidity.png",
 
