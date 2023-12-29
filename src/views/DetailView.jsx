@@ -8,6 +8,7 @@ function DetailView({id}) {
 
     const [cityInfo, setCityInfo] = useState({});
     const [weatherInfo, setWeatherInfo] = useState({});
+    const [forecastInfo, setforecastInfo] = useState([]);
     
     useEffect(function(){
         (async function(){
@@ -30,7 +31,23 @@ function DetailView({id}) {
 
             console.log(resultWeatherAPI);
             setWeatherInfo(resultWeatherAPI);
+
+            const urlAPIForecast = `https://api.openweathermap.org/data/2.5/forecast?lat=${foundElement.lat}&lon=${foundElement.lon}&appid=237b465750446e0f62f21b7e627d067c&units=metric`;
             
+            const responseForecastAPI = await fetch(urlAPIForecast);
+            const resultForecastAPI = await responseForecastAPI.json();
+
+            const newResultForecastAPI = [
+                resultForecastAPI.list[0],
+                resultForecastAPI.list[8],
+                resultForecastAPI.list[16],
+                resultForecastAPI.list[24],
+                resultForecastAPI.list[32]
+            ]
+
+            console.log(newResultForecastAPI);
+            setforecastInfo(newResultForecastAPI);
+
         })();
     },[]);
     
@@ -55,8 +72,8 @@ function DetailView({id}) {
                     
                     <div className="cardWeather">
                         <div className="weather">
-                            <img className="weatherIcon" src={cityInfo.weather_img_sky} />
-                            <h1 className="temp">{weatherInfo.main?.temp}°C</h1>
+                            <img className="weatherIcon" src={"https://openweathermap.org/img/wn/"+ weatherInfo.weather?.[0].icon + ".png"} />
+                            <h1 className="temp">{Math.round(weatherInfo.main?.temp)}°C</h1>
                             <h2 className="city">{cityInfo.city}</h2>
                                 <div className="details">
                                     <div className="col">
@@ -106,7 +123,23 @@ function DetailView({id}) {
                 </div> */}
 
             </div>
+            
+            <div className="forecast" >
+                {forecastInfo?.map( (item) => { 
+                    <li>key={item.dt}</li>
+                return(
+                    <>
+                        <p>{item.dt_txt} :</p>
+                        <p>{Math.round(item.main.temp) + " ºC"}</p>
+                        <img className="weather-icon" src={"https://openweathermap.org/img/wn/"+ item.weather?.[0].icon + ".png"} alt = "weathericon"></img>
+                        <p>{item.weather[0].main}</p>
+                        <hr />
 
+                    </>
+                )
+                
+            })}
+            </div>
             
         <Footer/>
         </>

@@ -9,7 +9,6 @@
         "lat": 25,
         "lon": 55,
 
-        "weather_img_sky": "/image/clear.png",
         "weather_img_wind": "/image/wind.png",
         "weather_img_humidity": "/image/humidity.png",
 
