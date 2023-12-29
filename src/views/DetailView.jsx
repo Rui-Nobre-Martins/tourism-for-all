@@ -6,23 +6,30 @@ import Footer from "../components/Footer"
 
 function DetailView({id}) {
 
-    const [cityInfo, setCityInfo] = useState({})
+    const [cityInfo, setCityInfo] = useState({});
+    const [weatherInfo, setWeatherInfo] = useState({});
     
-
     useEffect(function(){
         (async function(){
 
-            const url = "/api/citiesInfo.json";
-
-            const response = await fetch(url);
-            const result = await response.json();
+            const responseAPI = await fetch("/api/citiesInfo.json")
+            const resultAPI = await responseAPI.json();
             
-            const foundElement = result.find((cities) => {
+            
+            const foundElement = resultAPI.find((cities) => {
                 return cities.id == id;
             });
+
             console.log(foundElement);
             setCityInfo(foundElement);
-            
+
+            const urlAPIWeather = `https://api.openweathermap.org/data/2.5/weather?lat=${foundElement.lat}&lon=${foundElement.lon}&exclude=current,daily&appid=237b465750446e0f62f21b7e627d067c&units=metric`
+
+            const responseWeatherAPI = await fetch(urlAPIWeather);
+            const resultWeatherAPI = await responseWeatherAPI.json();
+
+            console.log(resultWeatherAPI);
+            setWeatherInfo(resultWeatherAPI);
             
         })();
     },[]);
@@ -44,33 +51,60 @@ function DetailView({id}) {
 
                 <div className="detailContent">
                     <p className="detailContentText">{cityInfo.description}</p>
-                    <img className="detailContentImage" src={cityInfo.image}/> 
+                    
+                    
+                    <div className="cardWeather">
+                        <div className="weather">
+                            <img className="weatherIcon" src={cityInfo.weather_img_sky} />
+                            <h1 className="temp">{weatherInfo.main?.temp}°C</h1>
+                            <h2 className="city">{cityInfo.city}</h2>
+                                <div className="details">
+                                    <div className="col">
+                                        <img src={cityInfo.weather_img_humidity} />
+                                    <div>
+                                        <p className="humidity">{weatherInfo.main?.humidity}</p>
+                                        <p>Humidity</p>
+                                    </div>
+                                    </div>
+                                    <div className="col">
+                                        <img src={cityInfo.weather_img_wind} />
+                                    <div>
+                                        <p className="wind">{weatherInfo.wind?.speed}</p>
+                                        <p>Wind Speed</p>
+                                    </div>
+                                    </div>
+                                </div>
+                        </div>
+                    </div>
+
+
                 </div>
             </div>
 
-            <div className="cardWeather">
+            {/* <div className="cardWeather">
                 <div className="weather">
                     <img className="weatherIcon" src={cityInfo.weather_img_sky} />
-                    <h1 className="temp">{cityInfo.weather_temp}</h1>
+                    <h1 className="temp">{weatherInfo.main?.temp}°C</h1>
                     <h2 className="city">{cityInfo.city}</h2>
                         <div className="details">
                             <div className="col">
                                 <img src={cityInfo.weather_img_humidity} />
                             <div>
-                                <p className="humidity">{cityInfo.weather_humidity}</p>
+                                <p className="humidity">{weatherInfo.main?.humidity}</p>
                                 <p>Humidity</p>
                             </div>
                             </div>
                             <div className="col">
                                 <img src={cityInfo.weather_img_wind} />
                             <div>
-                                <p className="wind">{cityInfo.weather_wind}</p>
+                                <p className="wind">{weatherInfo.wind?.speed}</p>
                                 <p>Wind Speed</p>
                             </div>
                             </div>
                         </div>
                     </div>
-                </div>
+                </div> */}
+
             </div>
 
             

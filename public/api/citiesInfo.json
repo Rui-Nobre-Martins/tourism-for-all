@@ -6,9 +6,8 @@
         "from": "01/02/2023",
         "to": "15/02/2023",
 
-        "weather_temp": "26°C",
-        "weather_wind": "5 km/h",
-        "weather_humidity": "62%",
+        "lat": 25,
+        "lon": 55,
 
         "weather_img_sky": "/image/clear.png",
         "weather_img_wind": "/image/wind.png",
@@ -31,9 +30,8 @@
         "from": "02/03/2023",
         "to": "17/03/2023",
 
-        "weather_temp": "12°C",
-        "weather_wind": "21 km/h",
-        "weather_humidity": "87%",
+        "lat": 51,
+        "lon": -0.12,
 
         "weather_img_sky": "/image/clouds.png",
         "weather_img_wind": "/image/wind.png",
@@ -55,9 +53,8 @@
         "from": "08/05/2023",
         "to": "20/05/2023",
 
-        "weather_temp": "11°C",
-        "weather_wind": "13 km/h",
-        "weather_humidity": "48%",
+        "lat": 48,
+        "lon": 2,
 
         "weather_img_sky": "/image/clear.png",
         "weather_img_wind": "/image/wind.png",
@@ -79,9 +76,8 @@
         "from": "30/07/2023",
         "to": "10/08/2023",
 
-        "weather_temp": "26°C",
-        "weather_wind": "8 km/h",
-        "weather_humidity": "92%",
+        "lat": 1,
+        "lon": 103,
 
         "weather_img_sky": "/image/mist.png",
         "weather_img_wind": "/image/wind.png",
