@@ -129,12 +129,10 @@ function DetailView({id}) {
                     <li>key={item.dt}</li>
                 return(
                     <>
-                        <p>{item.dt_txt} :</p>
+                        <p>{(item.dt_txt).substring(0,10)}</p>
                         <p>{Math.round(item.main.temp) + " ºC"}</p>
                         <img className="weather-icon" src={"https://openweathermap.org/img/wn/"+ item.weather?.[0].icon + ".png"} alt = "weathericon"></img>
                         <p>{item.weather[0].main}</p>
-                        <hr />
-
                     </>
                 )
                 

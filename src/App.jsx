@@ -6,7 +6,9 @@ import AboutUsView from "./views/AboutUsView"
 import DetailView from "./views/DetailView"
 
 
+
 function App() {
+
   
   return (
     <>

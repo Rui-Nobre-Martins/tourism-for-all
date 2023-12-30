@@ -4,7 +4,7 @@
 import CardContainerTrip from "../components/CardContainerTrip"
 import Footer from "../components/Footer"
 import Hero from "../components/Hero"
-import MapLocation from "../components/MapLocation"
+import MapBox from "../components/MapBox"
 import NavegationBar from "../components/NavegationBar"
 
 
@@ -16,7 +16,7 @@ function HomeView() {
         <NavegationBar/>
         <Hero/>
         <CardContainerTrip/>
-        <MapLocation/>
+        <MapBox/>
         <Footer/>
         </>
     )
