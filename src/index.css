@@ -362,14 +362,15 @@ footer {
 
 /* API weather */
 
-.cardWeather {
+.cardWeather, .forecast {
   width: 90%;
-  max-width: 270px;
+  max-width: 1070px;
   background: linear-gradient(135deg, var(--primary-color-dark), var(--primary-color));
   color: #fff;
   border-radius: 20px;
   padding: 10px 35px;
-
+  display: flex;
+  justify-content: center;
 }
 
 .weatherIcon {
@@ -419,14 +420,27 @@ footer {
 /* Start MapBox */
 
 .mainContainer {
-  width: 100%;
   height: 500px;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 
 
 /* Finish MapBox */
 
+/* Start MapDetail */
+
+.mapDetail {
+  padding: 20px;
+  height: 500px;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Finish MapDetail */
 
 
 
