@@ -39,11 +39,11 @@ function DetailView({id}) {
             const resultForecastAPI = await responseForecastAPI.json();
 
             const newResultForecastAPI = [
-                resultForecastAPI.list[0],
-                resultForecastAPI.list[8],
-                resultForecastAPI.list[16],
-                resultForecastAPI.list[24],
-                resultForecastAPI.list[32]
+                resultForecastAPI.list[3],
+                resultForecastAPI.list[11],
+                resultForecastAPI.list[18],
+                resultForecastAPI.list[27],
+                resultForecastAPI.list[35]
             ]
 
             console.log(newResultForecastAPI);
