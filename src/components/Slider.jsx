@@ -11,7 +11,8 @@ function Slider({cityInfo}) {
                         slidesPerView={1}
                         pagination={{clickable: true}}
                         autoplay={true}
-                        navigation>
+                        // navigation
+                        >
                         {cityInfo.slider.map( (item) => (
                             <SwiperSlide className="sliderItem" >
                             <img src= {item.slider_img} alt="travel photos" />
