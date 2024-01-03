@@ -77,7 +77,7 @@ function DetailView({id}) {
                 </div>
 
                 {getSlider()}
-
+                
                 <div className="detailContent">
                     <p className="detailContentText">{cityInfo.description}</p>
                         <div className="cardWeather">

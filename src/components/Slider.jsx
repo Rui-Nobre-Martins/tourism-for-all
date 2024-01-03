@@ -8,16 +8,13 @@ function Slider({cityInfo}) {
                 <div className="sliderContainer">
                     <div>
                         <Swiper
-                       
                         slidesPerView={1}
                         pagination={{clickable: true}}
-                        
                         navigation>
                         {cityInfo.slider.map( (item) => (
                             <SwiperSlide className="sliderItem" >
                             <img src= {item.slider_img} alt="travel photos" />
                             </SwiperSlide>
-                            
                         ))}
                         </Swiper>
                      </div>
