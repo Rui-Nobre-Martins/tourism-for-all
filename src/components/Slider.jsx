@@ -1,7 +1,7 @@
 import { Swiper, SwiperSlide} from "swiper/react";
 
 function Slider({cityInfo}) {
-    
+
     return(
         <>
         <div className="sliderTraveler">
@@ -10,6 +10,7 @@ function Slider({cityInfo}) {
                         <Swiper
                         slidesPerView={1}
                         pagination={{clickable: true}}
+                        autoplay={true}
                         navigation>
                         {cityInfo.slider.map( (item) => (
                             <SwiperSlide className="sliderItem" >
