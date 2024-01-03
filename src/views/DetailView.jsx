@@ -56,6 +56,12 @@ function DetailView({id}) {
             return (<MapDetail cityInfo={cityInfo}/>)
         }
     }
+
+    function getSlider() {
+        if (cityInfo.slider != undefined) {
+            return (<Slider cityInfo={cityInfo}/>)
+        }
+    }
     
   return(
         <>
@@ -70,7 +76,7 @@ function DetailView({id}) {
                     <p>To: {cityInfo.to}</p>
                 </div>
 
-                <Slider/>
+                {getSlider()}
 
                 <div className="detailContent">
                     <p className="detailContentText">{cityInfo.description}</p>
