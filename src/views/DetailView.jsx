@@ -25,7 +25,7 @@ function DetailView({id}) {
             console.log(foundElement);
             setCityInfo(foundElement);
 
-            const urlAPIWeather = `https://api.openweathermap.org/data/2.5/weather?lat=${foundElement.lat}&lon=${foundElement.lon}&exclude=current,daily&appid=237b465750446e0f62f21b7e627d067c&units=metric`
+            const urlAPIWeather = `https://api.openweathermap.org/data/2.5/weather?lat=${foundElement.lat}&lon=${foundElement.lon}&exclude=current,daily&appid=237b465750446e0f62f21b7e627d067c&units=metric`;
 
             const responseWeatherAPI = await fetch(urlAPIWeather);
             const resultWeatherAPI = await responseWeatherAPI.json();
@@ -39,11 +39,11 @@ function DetailView({id}) {
             const resultForecastAPI = await responseForecastAPI.json();
 
             const newResultForecastAPI = [
-                resultForecastAPI.list[3],
-                resultForecastAPI.list[11],
-                resultForecastAPI.list[18],
-                resultForecastAPI.list[27],
-                resultForecastAPI.list[35]
+                resultForecastAPI.list[7],
+                resultForecastAPI.list[15],
+                resultForecastAPI.list[23],
+                resultForecastAPI.list[31],
+                resultForecastAPI.list[39]
             ]
 
             console.log(newResultForecastAPI);
@@ -52,7 +52,7 @@ function DetailView({id}) {
     },[]);
 
     function getCoordinates() {
-        if (cityInfo.lat != undefined) {
+        if ((cityInfo.lat && cityInfo.lon) != undefined) {
             return (<MapDetail cityInfo={cityInfo}/>)
         }
     }

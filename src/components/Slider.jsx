@@ -7,7 +7,7 @@ const data = [
     {id: "4", image: "https://www.douglasandgordon.com/media/1903330/aerial-view-ancient-architecture-672532.jpg?crop=0,0.0963568052496329,0,0.15584583792217319&cropmode=percentage&width=1024&height=512&rnd=132506791710000000"}
     ]
 
-function Slider() {
+function Slider({cityInfo}) {
     return(
         <>
         <div className="sliderTraveler">
@@ -19,7 +19,7 @@ function Slider() {
                         pagination={{clickable: true}}
                         
                         navigation>
-                        {data.map( (item) => (
+                        {cityInfo?.map( (item) => (
                             <SwiperSlide className="sliderItem" >
                             <img src= {item.image} alt="travel photos" />
                             </SwiperSlide>
