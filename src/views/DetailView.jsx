@@ -125,9 +125,6 @@ function DetailView({id}) {
             <div>
              {getCoordinates()}
             </div>
-
-            
-        
         <Footer/>
         </>
     )
