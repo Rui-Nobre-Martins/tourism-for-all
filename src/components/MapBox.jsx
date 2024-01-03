@@ -1,6 +1,6 @@
 import * as React from 'react';
 import "mapbox-gl/dist/mapbox-gl.css"
-import  Map,{ Marker, NavigationControl} from 'react-map-gl'
+import  Map,{ GeolocateControl, Marker, NavigationControl} from 'react-map-gl'
 import { useState, useEffect } from "react"
 
 function MapBox() {
@@ -58,8 +58,8 @@ function MapBox() {
                 )
             })};
 
-        <NavigationControl position='top-right' showCompass showZoom/>
-
+        <NavigationControl position='bottom-right' showCompass showZoom/>
+        <GeolocateControl/>
         </Map>
         </div>
         

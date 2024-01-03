@@ -8,6 +8,7 @@ function Slider({cityInfo}) {
                 <div className="sliderContainer">
                     <div>
                         <Swiper
+                        effect="fade"
                         slidesPerView={1}
                         pagination={{clickable: true}}
                         autoplay={true}
