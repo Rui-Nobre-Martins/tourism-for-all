@@ -20,7 +20,8 @@ function MapDetail ({cityInfo}) {
 
                         latitude: lat,
                         longitude: lon,
-                        zoom: 1
+                        zoom: 1,
+                        interactive: false
                     }}
                     mapStyle="mapbox://styles/mapbox/streets-v9">
                         <Marker latitude={cityInfo.lat} longitude={cityInfo.lon}></Marker>

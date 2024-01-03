@@ -27,7 +27,8 @@ function MapBox() {
 
         latitude: 48,
         longitude: 2,
-        zoom: 1
+        zoom: 1,
+        interactive: false
     })
 
     return(
@@ -52,8 +53,7 @@ function MapBox() {
                 <>
                 <div className='location-pin'>
                     <Marker latitude={info.lat} longitude={info.lon}></Marker>
-                </div> 
-              
+                </div>
                 </>
                 )
             })};
