@@ -14,7 +14,6 @@ function NavegationBar() {
                 <Link href="/addlocation">Add Location</Link>
                 <Link href="/aboutus">About us</Link>
             </div>
-            <button className="btnContact">Contacts</button>
             </nav>
         </div>
         

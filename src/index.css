@@ -47,26 +47,27 @@ body {
 }
 
 .navLogo img{
-width: auto;
-height: 60px;
-padding: 12px;
-cursor: pointer;  
+  width: auto;
+  height: 60px;
+  padding: 12px;
+  cursor: pointer;  
 }
 
-.navBar .navLink {
-  list-style: none;
+.navLink {
   display: flex;
   align-items: center;
+  justify-content: end;
   gap: 45px;
   font-weight: 600;
   font-size: 16px;
-  color: black;
+  color: var(--text-dark);
+  padding-right: 20px;
 }
 
 .navLink a {
   text-decoration: none;
   color: var(--text-light);
-  color: black; 
+  color: var(--text-dark); 
   transition: all 0.4s ease;
 }
 
@@ -74,21 +75,6 @@ nav.Link, a:hover {
   color: var(--primary-color); 
 }
 
-.btnContact {
-  font-size: 16px;
-  font-weight: 500;
-  color: #fff;
-  background-color: var(--primary-color);
-  cursor: pointer;
-  padding: 12px 32px;
-  border-style: none;
-  border-radius: 32px;
-  margin-right: 10px;
-}
-
-.btnContact:hover {
-  background-color: var(--primary-color-dark);
-}
 /* Finish Favegation Bar */
 
 
@@ -104,9 +90,10 @@ padding: 80px;
     
 }
 .heroTitle {
+  display: block;
+  justify-content: center;
   text-align: center;
   font-size: 40px;
-  
 }
 
 .heroContainer > img {
@@ -121,7 +108,10 @@ padding: 80px;
 
 .travellersTitle {
   text-align: center;
+
 }
+
+
 
 .travellersContainer {
   max-width: 1200px;
@@ -129,8 +119,6 @@ padding: 80px;
 }
 
 img {
-  width: 100%;
-  display: flex;
   cursor: pointer;
 }
 
@@ -141,6 +129,21 @@ img {
   gap: 30px;
 }
 
+@media screen and (max-width: 699px) {
+  .travellersGrid img {
+    max-width: 300px;
+    max-height: 300px;
+  }
+
+  .travellersGrid {
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 50px;
+  }  
+}
+
 .travellersCard {
   border-radius: 80px;
   overflow: hidden;
@@ -148,6 +151,8 @@ img {
   -webkit-transition: -webkit-transform .5s ease;
   transition: transform .5s ease;
   color: black;
+
+  
 }
 
 
@@ -172,20 +177,21 @@ img {
   border-radius: 100%;
 }
 
-.travellersCardContent h3 {
-  padding-top: 10px;
-  margin-top: 16px;
+.travellersCardName {
+  display: flex;
+  justify-content: center;
   font-size: 18px;
   font-weight: 600;
   color: var(--text-dark);
 }
 
-.travellersCardContent p {
-  text-decoration: none;
-  font-weight: 500;
+.travellersCardCity {
+  display: flex;
+  justify-content: center;
+  font-weight: 600;
   color: var(--text-dark);
-  color: black;
 }
+
 /* Finish cardContainer Lastest Trips */
 
 /* Start Map "Location" */
