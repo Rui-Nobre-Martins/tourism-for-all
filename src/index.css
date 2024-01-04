@@ -1,15 +1,32 @@
+@import url("https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Poppins:ital,wght@0,700;1,700&display=swap");
+
 * {
   box-sizing: border-box;
   padding: 0px;
   margin: 0px;
-  font-family: "Poppins", sans-serif; 
-  /* change font???? */
+}
+
+img {
+  height: auto;
+  max-width: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
 }
 
 
 :root {
-  --primary-color: #74a4b3;
-  --primary-color-dark: #9fcad4;
+  --primary-color: #9fcad4;
+  --primary-color-dark: #74a4b3;
   --text-dark: #0f172a;
   --text-light: #f9f9f9a4;
   --white: #ffffff;
@@ -50,6 +67,7 @@ cursor: pointer;
   text-decoration: none;
   color: var(--text-light);
   color: black; 
+  transition: all 0.4s ease;
 }
 
 nav.Link, a:hover {
