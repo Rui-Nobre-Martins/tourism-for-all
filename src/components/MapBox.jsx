@@ -33,7 +33,7 @@ function MapBox() {
 
     return(
         <>
-        <div className="mainContainer">
+        <div className="mapBoxContainer">
         <Map 
 
             {...centerMapbox}

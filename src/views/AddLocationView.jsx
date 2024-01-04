@@ -1,5 +1,4 @@
 import Footer from "../components/Footer"
-import MapLocation from "../components/MapLocation";
 import NavegationBar from "../components/NavegationBar"
 
 
@@ -44,9 +43,9 @@ function AddLocationView() {
             </div>
         </div>
 
-        <MapLocation/>
-
-
+        <div className="mapLocation">
+            <img className="mapLocationImage" src="/image/mapabgremove.jpeg" alt="" />    
+        </div> 
         <Footer/>        
         </>
     )
