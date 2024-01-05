@@ -17,9 +17,11 @@ function MapBox() {
             setLocationForMapbox(resultMapbox)
         })();
     },[]);
-
-
   console.log(locationForMapbox)
+
+    function handleclick(info) {
+        window.location.href = "/details/" + info.id; 
+    }
 
     const Token = "pk.eyJ1Ijoicm1hcnRpbnMwMSIsImEiOiJjbHFsank3dHYxNTRxMmlyeTE5aTRsdmJzIn0.ru0GQjaXB_qaVMJWez801g";
 
@@ -35,15 +37,12 @@ function MapBox() {
         <>
         <div className="mapBoxContainer">
         <Map 
-
             {...centerMapbox}
             mapboxAccessToken={Token}
-
             onMove={function (state) {
                 return (
                     setCenterMapbox(state.centerMapbox)
-                )
-                
+                ) 
             }}
 
             mapStyle="mapbox://styles/mapbox/streets-v9">
@@ -52,7 +51,13 @@ function MapBox() {
                 return ( 
                 <>
                 <div className='location-pin'>
-                    <Marker latitude={info.lat} longitude={info.lon}></Marker>
+                    <Marker 
+                        onClick={() => {
+                            handleclick(info)
+                        }}
+                        latitude={info.lat} 
+                        longitude={info.lon}>
+                    </Marker>
                 </div>
                 </>
                 )

@@ -25,7 +25,7 @@ function MapDetail ({cityInfo}) {
                     }}
                     mapStyle="mapbox://styles/mapbox/streets-v9">
                         <Marker latitude={cityInfo.lat} longitude={cityInfo.lon}></Marker>
-                        <NavigationControl/>
+                        <NavigationControl showCompass showZoom/>
                 </Map>
             </div> 
         </>

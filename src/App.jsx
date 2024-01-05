@@ -7,13 +7,14 @@ import DetailView from "./views/DetailView"
 
 
 
+
 function App() {
 
   
   return (
     <>
+    
     <Switch>
-
         <Route path="/">
           <HomeView/>
         </Route>
@@ -29,6 +30,10 @@ function App() {
         <Route path="/details/:id">
           {(params) => <DetailView id={params.id}/>}
         </Route>
+
+        {/* <Route 
+          component={PageNotFound}>
+        </Route> */}
 
       </Switch>
     </>
