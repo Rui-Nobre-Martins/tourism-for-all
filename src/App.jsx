@@ -4,6 +4,7 @@ import HomeView from "./views/HomeView"
 import AddLocationView from "./views/AddLocationView"
 import AboutUsView from "./views/AboutUsView"
 import DetailView from "./views/DetailView"
+import PageNotFoundView from "./views/PageNotFoundView"
 
 
 
@@ -31,9 +32,7 @@ function App() {
           {(params) => <DetailView id={params.id}/>}
         </Route>
 
-        {/* <Route 
-          component={PageNotFound}>
-        </Route> */}
+        <PageNotFoundView/>
 
       </Switch>
     </>
