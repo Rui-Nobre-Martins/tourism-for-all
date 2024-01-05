@@ -17,7 +17,6 @@ function DetailView({id}) {
             const responseAPI = await fetch("/api/citiesInfo.json")
             const resultAPI = await responseAPI.json();
             
-            
             const foundElement = resultAPI.find((cities) => {
                 return cities.id == id;
             });
@@ -51,7 +50,7 @@ function DetailView({id}) {
         })();
     },[]);
 
-    function getCoordinates() {
+    function getCoord() {
         if ((cityInfo.lat && cityInfo.lon) != undefined) {
             return (<MapDetail cityInfo={cityInfo}/>)
         }
@@ -123,7 +122,7 @@ function DetailView({id}) {
             </div>
 
             <div>
-             {getCoordinates()}
+             {getCoord()}
             </div>
         <Footer/>
         </>

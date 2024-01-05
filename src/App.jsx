@@ -31,7 +31,7 @@ function App() {
         <Route path="/details/:id">
           {(params) => <DetailView id={params.id}/>}
         </Route>
-
+        
         <PageNotFoundView/>
 
       </Switch>

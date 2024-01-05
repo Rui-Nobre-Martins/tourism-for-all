@@ -1,6 +1,3 @@
-
-
-
 import CardContainerTrip from "../components/CardContainerTrip"
 import Footer from "../components/Footer"
 import Hero from "../components/Hero"
