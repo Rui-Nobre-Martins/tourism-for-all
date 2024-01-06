@@ -23,7 +23,7 @@ function NavegationBar() {
 
                 <Link href="/aboutus"> 
                     <img src="/image/user-solid.svg" alt="" />  
-                    <span className="hideLetter">About us</span> 
+                    <span className="hideLetter">About Me</span> 
                 </Link>
             </div>
             </nav>

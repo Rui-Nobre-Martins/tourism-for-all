@@ -1,4 +1,5 @@
 import Footer from "../components/Footer"
+import MapBox from "../components/MapBox"
 import NavegationBar from "../components/NavegationBar"
 import SubscribeFrom from "../components/SubscribeFrom"
 
@@ -19,6 +20,7 @@ function AboutUsView() {
             </div>  
         </div>
 
+        <MapBox/>
         <SubscribeFrom/>
         <Footer/>
         </>
