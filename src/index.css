@@ -240,13 +240,18 @@ input, textarea {
 
 /* Start Footer  */
 footer {
-  margin-top: 50px;
+  margin-top: 180px;
   position: relative;
   width: 100%;
   background-color: #9fcad4;
   color: white;
   text-align: center;
-  padding: 20px;
+  padding: 10px;
+}
+
+.iconFooter {
+  width: 30px;
+  margin: 10px;
 }
 
 /* Finish Footer  */
