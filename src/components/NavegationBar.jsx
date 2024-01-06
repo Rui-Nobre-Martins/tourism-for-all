@@ -29,11 +29,11 @@ function NavegationBar() {
             </nav>
         </div>
 
-        <div className="mobileIcon">
+        {/* <div className="mobileIcon">
             <img src="/image/house-solid.svg" alt="Home Button" /> 
             <img src="/image/map-pin-solid.svg" alt="Add location" /> 
             <img src="/image/user-solid.svg" alt="" />  
-        </div>
+        </div> */}
 
         </>
     )

@@ -277,7 +277,7 @@ footer {
 
 /* Start AboutUs VIEW */
 .aboutContainer {
-  padding: 50px;
+  padding: 40px;
   max-width: 1200px;
   margin: 0 auto;
 }
@@ -289,20 +289,36 @@ footer {
 
 .aboutContent {
   display: flex;
+  justify-content: center;
   align-items: center;
-  
 }
+
 .aboutText {
   padding: 20px;
   align-items: center;
-  display: flex; 
-  flex-wrap: wrap;
 }
 
 .aboutImage {
   border-radius: 10px;
   width: 200px;
 }
+
+@media screen and (max-width: 699px) {
+  .aboutContent {
+    display:flex;
+    flex-wrap: wrap;
+  }
+
+  .aboutImage {
+    display: flex;
+    justify-content: center;
+  }
+
+  .aboutText {
+    padding: 20px;
+  }
+}
+
 /* Finish AboutUs VIEW */
 
 
@@ -469,9 +485,6 @@ footer {
   max-width: 1200px;
   margin: 0 auto;
 }
-
-
-
 /* Finish MapBox */
 
 /* Start MapDetail */
