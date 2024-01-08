@@ -421,15 +421,19 @@ footer {
 
 /* API weather */
 
-.cardWeather, .forecast {
-  width: 90%;
-  max-width: 1070px;
+.forecastContainer {
+  display: flex;
+  justify-content: center;
+}
+
+.cardWeather{
   background: linear-gradient(135deg, var(--primary-color-dark), var(--primary-color));
   color: #fff;
   border-radius: 20px;
-  padding: 10px 35px;
+  padding: 10px 60px;
   display: flex;
   justify-content: center;
+  text-indent: 6px;
 }
 
 .weatherIcon {
@@ -471,6 +475,40 @@ footer {
   font-size: 20px;
   padding: 5px;
 }
+
+.forecast {
+  background: linear-gradient(135deg, var(--primary-color-dark), var(--primary-color));
+  color: #fff;
+  border-radius: 20px;
+  padding: 10px 35px;
+  display: flex;
+  align-items: center;
+  font-size: 12px;
+  text-indent: 6px;
+}
+
+@media screen and (max-width: 699px) {
+  .forecastContainer {
+    display: flex;
+    justify-content: end;
+    margin-right: 20px;
+  }
+
+  .forecast {
+    background: linear-gradient(135deg, var(--primary-color-dark), var(--primary-color));
+    color: var(--white);
+    border-radius: 20px;
+    padding: 10px 35px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    font-size: 12px;
+    text-indent: 6px;
+  }
+}
+
+
 
 
 
