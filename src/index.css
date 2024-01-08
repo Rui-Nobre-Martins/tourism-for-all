@@ -428,7 +428,7 @@ footer {
 
 .cardWeather{
   background: linear-gradient(135deg, var(--primary-color-dark), var(--primary-color));
-  color: #fff;
+  color: var(--white);
   border-radius: 20px;
   padding: 10px 60px;
   display: flex;
@@ -456,6 +456,7 @@ footer {
 
 .details {
   display: flex;
+  flex-direction: column;
   align-items: center;
   padding: 5 40px;
   margin-top: 20px;
