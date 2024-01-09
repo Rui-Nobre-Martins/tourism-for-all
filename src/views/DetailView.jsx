@@ -74,9 +74,9 @@ function DetailView({id}) {
                     <p>From: {cityInfo.from}</p>
                     <p>To: {cityInfo.to}</p>
                 </div>
-
-                {getSlider()}
-                
+               
+                   {getSlider()} 
+            
                 <div className="detailContent">
                     <p className="detailContentText">{cityInfo.description}</p>
                         <div className="cardWeather">
@@ -108,23 +108,24 @@ function DetailView({id}) {
             </div>
             
             <div className="forecastContainer">
-                <div className="forecast" >
-                    {forecastInfo?.map( (item) => { 
-                        <li>key={item.dt}</li>
-                    return(
-                        <>
-                            <p>{(item.dt_txt).substring(0,10)}</p>
-                            <p>{Math.round(item.main.temp) + " ºC"}</p>
-                            <img className="weatherIcon" src={"https://openweathermap.org/img/wn/"+ item.weather?.[0].icon + ".png"} alt="weathericon"></img>
-                        </>
-                    )
-                })}
+                    <div className="forecast" >
+                        {forecastInfo?.map( (item) => { 
+                            <li>key={item.dt}</li>
+                        return(
+                            <>
+                                <p>{(item.dt_txt).substring(0,10)}</p>
+                                <p>{Math.round(item.main.temp) + " ºC"}</p>
+                                <img className="weatherIcon" src={"https://openweathermap.org/img/wn/"+ item.weather?.[0].icon + ".png"} alt="weathericon"></img>
+                            </>
+                        )
+                    })}
+                    </div>
+                <div>
+                    {getCoord()}
                 </div>
             </div>    
-
-            <div>
-             {getCoord()}
-            </div>
+            
+            {/* {getCoord()} */}
         <Footer/>
         </>
     )

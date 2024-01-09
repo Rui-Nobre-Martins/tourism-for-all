@@ -24,6 +24,8 @@ body {
 }
 
 
+
+
 :root {
   --primary-color: #9fcad4;
   --primary-color-dark: #74a4b3;
@@ -96,18 +98,16 @@ body {
 
 /* Start Hero */
 .hero {
-padding: 80px;
+  padding: 80px;
 }
 
 .heroContainer {
   width: 100%;
   max-width: 1200px;
-  margin: 0 auto;
+  margin: auto;
     
 }
 .heroTitle {
-  display: block;
-  justify-content: center;
   text-align: center;
   font-size: 40px;
 }
@@ -124,16 +124,12 @@ padding: 80px;
 
 .travellersTitle {
   text-align: center;
-
 }
 
 
 .travellersContainer {
   max-width: 1200px;
   margin: auto;
-}
-
-img {
   cursor: pointer;
 }
 
@@ -369,27 +365,37 @@ footer {
 
 .sliderTraveler {
   padding: 20px;
-  }
+}
   
-  .sliderContainer {
-    width: 100%;
-    max-width: 1200px;
-    margin: 0 auto;
-  }
+.sliderContainer {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
 
   
-  .sliderItem > img {
-    width: 100%; 
-    height: 400px;
-    object-fit: contain;
-  }
+.sliderItem > img  {
+  width: 100%; 
+  height: 400px;
+  object-fit: contain;
+}
 
 /* Finish  The TravelerView */
 
 /* Start The DetailView */
 
+@media screen and (max-width: 699px) {
+  
+  .detailContent{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+}
+
 .detailContainer {
-  padding: 100px;
+  padding-top: 100px;
   max-width: 1200px;
   margin: 0 auto;
 }
@@ -399,18 +405,19 @@ footer {
   padding: 5px;
 }
 
+
+
 .detailContent {
-  display: grid;
-  grid-template-columns: auto 1fr;
+  display: flex;
   gap: 20px;
   padding: 20px;
 }
 
-.detailContentImage {
+/* .detailContentImage {
   grid-row: 1/ span 2;
   width: 300px;
   height: 300px;
-}
+} */
 
 /* Finish The DetailView */
 
@@ -421,19 +428,13 @@ footer {
 
 /* API weather */
 
-.forecastContainer {
-  display: flex;
-  justify-content: center;
-}
 
-.cardWeather{
+
+.weather{
   background: linear-gradient(135deg, var(--primary-color-dark), var(--primary-color));
   color: var(--white);
   border-radius: 20px;
   padding: 10px 60px;
-  display: flex;
-  justify-content: center;
-  text-indent: 6px;
 }
 
 .weatherIcon {
@@ -477,16 +478,24 @@ footer {
   padding: 5px;
 }
 
+.forecastContainer {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
 .forecast {
   background: linear-gradient(135deg, var(--primary-color-dark), var(--primary-color));
   color: #fff;
   border-radius: 20px;
   padding: 10px 35px;
   display: flex;
+  justify-content: center;
   align-items: center;
   font-size: 12px;
   text-indent: 6px;
 }
+
+
 
 @media screen and (max-width: 699px) {
   .forecastContainer {
