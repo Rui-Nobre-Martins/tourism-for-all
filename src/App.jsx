@@ -30,8 +30,9 @@ function App() {
         <Route path="/details/:id">
           {(params) => <DetailView id={params.id}/>}
         </Route>
-    
-        <PageNotFoundView/>
+
+        <Route path="/details/*" component={PageNotFoundView}/>
+        
 
       </Switch>
     </>

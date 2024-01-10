@@ -108,6 +108,7 @@ function DetailView({id}) {
             </div>
             
             <div className="forecastContainer">
+                
                     <div className="forecast" >
                         {forecastInfo?.map( (item) => { 
                             <li>key={item.dt}</li>
@@ -120,9 +121,9 @@ function DetailView({id}) {
                         )
                     })}
                     </div>
-                <div>
+                
                     {getCoord()}
-                </div>
+                
             </div>    
             
             {/* {getCoord()} */}

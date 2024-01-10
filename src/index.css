@@ -413,11 +413,6 @@ footer {
   padding: 20px;
 }
 
-/* .detailContentImage {
-  grid-row: 1/ span 2;
-  width: 300px;
-  height: 300px;
-} */
 
 /* Finish The DetailView */
 
@@ -481,11 +476,12 @@ footer {
 .forecastContainer {
   max-width: 1200px;
   margin: 0 auto;
+  padding: 10px;
 }
 
 .forecast {
   background: linear-gradient(135deg, var(--primary-color-dark), var(--primary-color));
-  color: #fff;
+  color: var(--white);
   border-radius: 20px;
   padding: 10px 35px;
   display: flex;
@@ -500,8 +496,7 @@ footer {
 @media screen and (max-width: 699px) {
   .forecastContainer {
     display: flex;
-    justify-content: end;
-    margin-right: 20px;
+    padding: 50px;
   }
 
   .forecast {
