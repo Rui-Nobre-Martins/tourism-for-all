@@ -57,7 +57,7 @@ body {
 
 .navLink {
   display: flex;
-  align-items: center;
+  align-items: end;
   justify-content: end;
   gap: 35px;
   font-weight: 600;
@@ -86,11 +86,25 @@ body {
     visibility: hidden;
   }
 
-  /* .navLink {
-    display: flex;
-    align-items: center;
+  .hideIcon {
+    visibility: hidden;
+  }
 
-  } */
+  .navLogo {
+    visibility: hidden;
+  }
+
+  .mobileIcon {
+    display: flex;
+    align-items: end;
+    justify-content: end;
+    gap: 35px;
+    padding-right: 20px;
+    visibility: visible;
+    cursor: pointer;
+  }
+
+
 }
 
 /* Finish Favegation Bar */
