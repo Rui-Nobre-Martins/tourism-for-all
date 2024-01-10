@@ -15,23 +15,26 @@ function App() {
     <>
     
     <Switch>
-        <Route path="/">
-          <HomeView/>
-        </Route>
+      <Route path="/">
+        <HomeView/>
+      </Route>
 
-        <Route path="/addlocation">
-          <AddLocationView/>
-        </Route>
+      <Route path="/addlocation">
+        <AddLocationView/>
+      </Route>
 
-        <Route path="/aboutus">
-          <AboutUsView/>
-        </Route>
+      <Route path="/aboutus">
+        <AboutUsView/>
+      </Route>
 
-        <Route path="/details/:id">
-          {(params) => <DetailView id={params.id}/>}
-        </Route>
+      <Route path="/details/:id">
+        {(params) => <DetailView id={params.id}/>}
+      </Route>
 
-        <Route path="/details/*" component={PageNotFoundView}/>
+      <Route>
+        <PageNotFoundView/>
+      </Route>
+        
         
 
       </Switch>

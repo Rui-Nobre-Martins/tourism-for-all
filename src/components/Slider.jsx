@@ -1,5 +1,6 @@
 import { Swiper, SwiperSlide} from "swiper/react";
 
+
 function Slider({cityInfo}) {
 
     return(

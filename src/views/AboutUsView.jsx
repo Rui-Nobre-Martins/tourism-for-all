@@ -16,7 +16,7 @@ function AboutUsView() {
                 <p className="aboutText">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quia asperiores nobis quaerat architecto accusamus similique soluta doloribus! Quo facere suscipit ducimus doloremque nihil illum nisi impedit nemo? Consequuntur, ut inventore.
                 Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quia asperiores nobis quaerat architecto accusamus similique soluta doloribus! Quo facere suscipit ducimus doloremque nihil illum nisi impedit nemo? Consequuntur, ut inventore.
                 Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quia asperiores nobis quaerat architecto accusamus similique soluta doloribus! Quo facere suscipit ducimus doloremque nihil illum nisi impedit nemo? Consequuntur, ut inventore.
-                </p>
+                </p>   
             </div>  
         </div>
 

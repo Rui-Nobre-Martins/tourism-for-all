@@ -98,7 +98,7 @@ body {
 
 /* Start Hero */
 .hero {
-  padding: 80px;
+  padding-top: 80px;
 }
 
 .heroContainer {
@@ -273,7 +273,7 @@ footer {
 
 /* Start AboutUs VIEW */
 .aboutContainer {
-  padding: 40px;
+  padding-top: 40px;
   max-width: 1200px;
   margin: 0 auto;
 }
@@ -480,12 +480,13 @@ footer {
 }
 
 .forecast {
+
   background: linear-gradient(135deg, var(--primary-color-dark), var(--primary-color));
   color: var(--white);
   border-radius: 20px;
-  padding: 10px 35px;
+  padding: 10px;
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
   font-size: 12px;
   text-indent: 6px;
@@ -503,21 +504,15 @@ footer {
     background: linear-gradient(135deg, var(--primary-color-dark), var(--primary-color));
     color: var(--white);
     border-radius: 20px;
-    padding: 10px 35px;
+    padding: 10px;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
     align-items: center;
     font-size: 12px;
-    text-indent: 6px;
+    text-indent: 2px;
   }
 }
-
-
-
-
-
-
 
 /* Start MapBox */
 
@@ -541,6 +536,10 @@ footer {
 }
 
 /* Finish MapDetail */
+
+.page404Container {
+  padding-top: 350px;
+}
 
 
 

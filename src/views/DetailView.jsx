@@ -21,6 +21,11 @@ function DetailView({id}) {
                 return cities.id == id;
             });
 
+            if (!foundElement) {
+                window.location.href = "/pagenotfound";
+                return
+            }
+
             console.log(foundElement);
             setCityInfo(foundElement);
 
