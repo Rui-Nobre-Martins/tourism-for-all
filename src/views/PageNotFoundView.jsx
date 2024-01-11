@@ -7,9 +7,15 @@ function PageNotFoundView () {
         <>
         <NavegationBar/>
         <div className="page404Container">
-            <img src="/image/404error.jpeg" alt="" />
-        </div>
-        <Footer/>
+            <h1>Error</h1>
+            <h2>404 Page Not Found</h2>
+            <p>Travel to our navigation bar and fly to our website!</p>   
+            
+            
+            <div className="imgPagenotFoundContainer">
+                <img className="imgPageNotFound" src="/image/pagenotfound.gif" alt="Page Not Found Image" />
+            </div>
+        </div>        
         </>
     )
 }

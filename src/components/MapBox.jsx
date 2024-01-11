@@ -27,10 +27,10 @@ function MapBox() {
 
     const [centerMapbox, setCenterMapbox] = useState({
 
-        latitude: 48,
-        longitude: 2,
+        latitude: 46,
+        longitude: 25,
         zoom: 1,
-        interactive: false
+        interactive: true
     })
 
     return(
