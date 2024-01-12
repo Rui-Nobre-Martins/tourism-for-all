@@ -13,11 +13,9 @@ function MapBox() {
             const responseMapbox = await fetch("/api/citiesInfo.json");
             const resultMapbox = await responseMapbox.json();
 
-            console.log(resultMapbox)
             setLocationForMapbox(resultMapbox)
         })();
     },[]);
-  console.log(locationForMapbox)
 
     function handleclick(info) {
         window.location.href = "/details/" + info.id; 

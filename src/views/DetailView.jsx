@@ -84,56 +84,52 @@ function DetailView({id}) {
             
                 <div className="detailContent">
                     <p className="detailContentText">{cityInfo.description}</p>
-                        <div className="cardWeather">
-                            <div className="weather">
-                                <img className="weatherIcon" src={"https://openweathermap.org/img/wn/"+ weatherInfo.weather?.[0].icon + ".png"} />
-                                <h1 className="temp">{Math.round(weatherInfo.main?.temp)}°C</h1>
-                                <h2 className="city">{cityInfo.city}</h2>
-                                    <div className="details">
-                                        <div className="col">
-                                            <img src={cityInfo.weather_img_humidity} />
-                                        <div>
-                                            <p className="humidity">{weatherInfo.main?.humidity}</p>
+                    <div className="cardWeather">
+                        <div className="weather">
+                            <img className="weatherIcon" src={"https://openweathermap.org/img/wn/"+ weatherInfo.weather?.[0].icon + ".png"} />
+                            <h1 className="temp">{Math.round(weatherInfo.main?.temp)}°C</h1>
+                            <h2 className="city">{cityInfo.city}</h2>
+                            <div className="details">
+                                <div className="col">
+                                    <img src={cityInfo.weather_img_humidity} />
+                                    <div>
+                                        <p className="humidity">{weatherInfo.main?.humidity}</p>
                                             <p>Humidity</p>
-                                        </div>
-                                        </div>
-                                        <div className="col">
-                                            <img src={cityInfo.weather_img_wind} />
-                                        <div>
-                                            <p className="wind">{weatherInfo.wind?.speed}</p>
-                                            <p>Wind Speed</p>
-                                        </div>
-                                        </div>
                                     </div>
+                                </div>
+                                <div className="col">
+                                    <img src={cityInfo.weather_img_wind} />
+                                    <div>
+                                        <p className="wind">{weatherInfo.wind?.speed}</p>
+                                        <p>Wind Speed</p>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-
             </div>
+        </div>
             
-            <div className="forecastContainer">
-                
-                    <div className="forecast" >
-                        {forecastInfo?.map( (item) => { 
-                            <li>key={item.dt}</li>
-                        return(
-                            <>
-                                <div className="forecastContent">
-                                    <p>{(item.dt_txt).substring(0,10)}</p>  
-                                    <p>{Math.round(item.main.temp) + " ºC"}</p> 
-                                    <img className="weatherIcon" src={"https://openweathermap.org/img/wn/"+ item.weather?.[0].icon + ".png"} alt="weathericon"></img>
-                                </div>
-                            </>
-                        )
-                    })}
+        <div className="forecastContainer">
+            <div className="forecast" >
+                {forecastInfo?.map( (item) => { 
+                    <li>key={item.dt}</li>
+                    return(
+                    <>
+                    <div className="forecastContent">
+                        <p>{(item.dt_txt).substring(0,10)}</p>  
+                        <p>{Math.round(item.main.temp) + " ºC"}</p> 
+                        <img className="weatherIcon" src={"https://openweathermap.org/img/wn/"+ item.weather?.[0].icon + ".png"} alt="weathericon"></img>
                     </div>
+                    </>
+                    )
+                    })}
+                </div>
                 
-                    {getCoord()}
+                {getCoord()}
                 
             </div>    
-            
-            {/* {getCoord()} */}
         <Footer/>
         </>
     )
