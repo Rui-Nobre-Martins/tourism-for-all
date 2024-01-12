@@ -12,7 +12,7 @@ function MapBox() {
         (async function(){
 
             const resultMapbox = await MapboxApiSevice.getMapboxData();
-
+            
             setLocationForMapbox(resultMapbox)
         })();
     },[]);
