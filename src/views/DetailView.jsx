@@ -4,6 +4,7 @@ import NavegationBar from "../components/NavegationBar"
 import Slider from "../components/Slider"
 import Footer from "../components/Footer"
 import MapDetail from "../components/MapDetail";
+import CityApiService from "../services/CityApiService";
 
 function DetailView({id}) {
 
@@ -14,28 +15,25 @@ function DetailView({id}) {
     useEffect(function(){
         (async function(){
 
-            const responseAPI = await fetch("/api/citiesInfo.json")
-            const resultAPI = await responseAPI.json();
-            
+            const resultAPI = await CityApiService.getCityData();
             const foundElement = resultAPI.find((cities) => {
                 return cities.id == id;
             });
 
             if (!foundElement) {
                 window.location.href = "/pagenotfound";
-                return
+                return;
             }
-
-            console.log(foundElement);
             setCityInfo(foundElement);
+
 
             const urlAPIWeather = `https://api.openweathermap.org/data/2.5/weather?lat=${foundElement.lat}&lon=${foundElement.lon}&exclude=current,daily&appid=237b465750446e0f62f21b7e627d067c&units=metric`;
 
             const responseWeatherAPI = await fetch(urlAPIWeather);
             const resultWeatherAPI = await responseWeatherAPI.json();
 
-            console.log(resultWeatherAPI);
             setWeatherInfo(resultWeatherAPI);
+            
 
             const urlAPIForecast = `https://api.openweathermap.org/data/2.5/forecast?lat=${foundElement.lat}&lon=${foundElement.lon}&appid=237b465750446e0f62f21b7e627d067c&units=metric`;
             
@@ -48,9 +46,8 @@ function DetailView({id}) {
                 resultForecastAPI.list[23],
                 resultForecastAPI.list[31],
                 resultForecastAPI.list[39]
-            ]
+            ];
 
-            console.log(newResultForecastAPI);
             setforecastInfo(newResultForecastAPI);
         })();
     },[]);
@@ -80,7 +77,7 @@ function DetailView({id}) {
                     <p>To: {cityInfo.to}</p>
                 </div>
                
-                   {getSlider()} 
+                {getSlider()} 
             
                 <div className="detailContent">
                     <p className="detailContentText">{cityInfo.description}</p>
@@ -93,14 +90,14 @@ function DetailView({id}) {
                                 <div className="col">
                                     <img src={cityInfo.weather_img_humidity} />
                                     <div>
-                                        <p className="humidity">{weatherInfo.main?.humidity}</p>
+                                        <p className="humidity">{weatherInfo.main?.humidity}%</p>
                                             <p>Humidity</p>
                                     </div>
                                 </div>
                                 <div className="col">
                                     <img src={cityInfo.weather_img_wind} />
                                     <div>
-                                        <p className="wind">{weatherInfo.wind?.speed}</p>
+                                        <p className="wind">{weatherInfo.wind?.speed}km/h</p>
                                         <p>Wind Speed</p>
                                     </div>
                                 </div>
@@ -114,7 +111,6 @@ function DetailView({id}) {
         <div className="forecastContainer">
             <div className="forecast" >
                 {forecastInfo?.map( (item) => { 
-                    <li>key={item.dt}</li>
                     return(
                     <>
                     <div className="forecastContent">

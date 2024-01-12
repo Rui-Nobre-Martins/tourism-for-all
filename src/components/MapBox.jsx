@@ -2,6 +2,7 @@ import * as React from 'react';
 import "mapbox-gl/dist/mapbox-gl.css"
 import  Map,{ GeolocateControl, Marker, NavigationControl} from 'react-map-gl'
 import { useState, useEffect } from "react"
+import MapboxApiSevice from '../services/MapboxApiSevice';
 
 function MapBox() {
 
@@ -10,8 +11,7 @@ function MapBox() {
     useEffect(function(){
         (async function(){
 
-            const responseMapbox = await fetch("/api/citiesInfo.json");
-            const resultMapbox = await responseMapbox.json();
+            const resultMapbox = await MapboxApiSevice.getMapboxData();
 
             setLocationForMapbox(resultMapbox)
         })();

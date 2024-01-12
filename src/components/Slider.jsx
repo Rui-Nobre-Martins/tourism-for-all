@@ -6,23 +6,23 @@ function Slider({cityInfo}) {
     return(
         <>
         <div className="sliderTraveler">
-                <div className="sliderContainer">
-                    <div>
-                        <Swiper
-                        effect="fade"
-                        slidesPerView={1}
-                        pagination={{clickable: true}}
-                        autoplay={true}
-                        // navigation
-                        >
-                        {cityInfo.slider.map( (item) => (
-                            <SwiperSlide className="sliderItem" >
+            <div className="sliderContainer">
+                <div>
+                    <Swiper
+                    effect="fade"
+                    slidesPerView={1}
+                    pagination={{clickable: true}}
+                    autoplay={true}
+                    // navigation
+                    >
+                    {cityInfo.slider.map( (item) => (
+                        <SwiperSlide className="sliderItem" >
                             <img src= {item.slider_img} alt="travel photos" />
-                            </SwiperSlide>
+                        </SwiperSlide>
                         ))}
-                        </Swiper>
-                     </div>
+                    </Swiper>
                 </div>
+            </div>
           </div>
           </>
     )

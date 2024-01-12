@@ -44,7 +44,7 @@ function AddLocationView() {
         </div>
 
         <div className="mapLocation">
-            <img className="mapLocationImage" src="/image/mapabgremove.jpeg" alt="" />    
+            <img className="mapLocationImage" src="/image/mapabgremove.jpeg" alt="Map illustration" />    
         </div> 
         <Footer/>        
         </>

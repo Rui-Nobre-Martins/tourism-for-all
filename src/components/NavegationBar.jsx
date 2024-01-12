@@ -38,14 +38,8 @@ function NavegationBar() {
                 <img className="navMobileIcon" src="/image/user-solid.svg" alt="" />
                 </Link>
             </div>
-
             </nav>
-
-            
         </div>
-
-        
-        
         </>
     )
 }
