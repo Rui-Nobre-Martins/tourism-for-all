@@ -34,7 +34,6 @@ function DetailView({id}) {
 
             setWeatherInfo(resultWeatherAPI);
             
-
             const urlAPIForecast = `https://api.openweathermap.org/data/2.5/forecast?lat=${foundElement.lat}&lon=${foundElement.lon}&appid=237b465750446e0f62f21b7e627d067c&units=metric`;
             
             const responseForecastAPI = await fetch(urlAPIForecast);
@@ -91,7 +90,7 @@ function DetailView({id}) {
                                     <img src={cityInfo.weather_img_humidity} />
                                     <div>
                                         <p className="humidity">{weatherInfo.main?.humidity}%</p>
-                                            <p>Humidity</p>
+                                        <p>Humidity</p>
                                     </div>
                                 </div>
                                 <div className="col">

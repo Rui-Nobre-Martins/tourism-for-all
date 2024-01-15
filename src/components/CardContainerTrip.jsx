@@ -3,7 +3,7 @@ import { Link } from "wouter"
 function CardContainerTrip () {
     return(
         <>
-          <h2 className="travellersTitle">Best travel of the year</h2>
+        <h2 className="travellersTitle">Best travel of the year</h2>
         <div className="travellersContainer">
           <div className="travellersGrid">
             <div className="travellersCard">
@@ -77,9 +77,9 @@ function CardContainerTrip () {
               </div>
             </div>
           </div>
-    </div>
-        </>
+        </div>
+      </>
     )
-}
+  }
 
 export default CardContainerTrip

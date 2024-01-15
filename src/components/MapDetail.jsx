@@ -1,5 +1,5 @@
 import * as React from 'react'
-import "mapbox-gl/dist/mapbox-gl.css";
+import "mapbox-gl/dist/mapbox-gl.css"
 import  Map,{ NavigationControl, Marker} from 'react-map-gl'
 
 function MapDetail ({cityInfo}) {
@@ -17,18 +17,17 @@ function MapDetail ({cityInfo}) {
                 mapboxAccessToken= {MapDetailTOKEN}
 
                 initialViewState={{
-
-                        latitude: lat,
-                        longitude: lon,
-                        zoom: 1,
-                        interactive: false
+                    latitude: lat,
+                    longitude: lon,
+                    zoom: 1,
+                    interactive: false
                     }}
                     mapStyle="mapbox://styles/mapbox/streets-v9">
-                        <Marker latitude={cityInfo.lat} longitude={cityInfo.lon}></Marker>
-                        <NavigationControl showCompass showZoom/>
+                    <Marker latitude={cityInfo.lat} longitude={cityInfo.lon}></Marker>
+                    <NavigationControl showCompass showZoom/>
                 </Map>
             </div> 
         </>
     )}
 
-export default MapDetail;
+export default MapDetail

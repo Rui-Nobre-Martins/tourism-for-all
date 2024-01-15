@@ -1,4 +1,3 @@
-
 import NavegationBar from "../components/NavegationBar"
 
 function PageNotFoundView () {
@@ -19,4 +18,4 @@ function PageNotFoundView () {
     )
 }
 
-export default PageNotFoundView;
+export default PageNotFoundView

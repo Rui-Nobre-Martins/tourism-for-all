@@ -1,5 +1,4 @@
 import { Route, Switch } from "wouter"
-
 import HomeView from "./views/HomeView"
 import AddLocationView from "./views/AddLocationView"
 import AboutUsView from "./views/AboutUsView"
@@ -34,9 +33,6 @@ function App() {
       <Route>
         <PageNotFoundView/>
       </Route>
-        
-        
-
       </Switch>
     </>
   )

@@ -25,7 +25,6 @@ function AboutUsView() {
                 </p>   
             </div>  
         </div>
-
         <MapBox/>
         <SubscribeFrom/>
         <Footer/>

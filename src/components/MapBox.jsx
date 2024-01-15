@@ -63,4 +63,4 @@ function MapBox() {
     )
 }
 
-export default MapBox;
+export default MapBox
