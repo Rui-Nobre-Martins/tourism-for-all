@@ -350,8 +350,9 @@ footer {
   margin: 0 auto;
   }
 
-.form {
+.formDate {
   appearance: none;
+  background-color: aquamarine;
 }
 
 .formTitle {
