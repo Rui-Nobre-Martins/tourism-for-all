@@ -352,7 +352,6 @@ footer {
 
 .formDate {
   appearance: none;
-  background-color: aquamarine;
 }
 
 .formTitle {
@@ -363,11 +362,9 @@ footer {
 .formContent {
   display: flex;
   justify-content: center;
-  appearance: none;
 }
 
  input, textarea {
-  appearance: none;
   display: flex;
   justify-content: center;
   width: 300px;
