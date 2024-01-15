@@ -6,8 +6,8 @@
         "from": "01/02/2023",
         "to": "15/02/2023",
 
-        "lat": 25,
-        "lon": 55,
+        "lat": 25.20,
+        "lon": 55.27,
 
         "weather_img_wind": "/image/wind.png",
         "weather_img_humidity": "/image/humidity.png",
@@ -31,8 +31,8 @@
         "from": "02/03/2023",
         "to": "17/03/2023",
 
-        "lat": 51,
-        "lon": -0.12,
+        "lat": 51.50,
+        "lon": -0.1277,
 
         "weather_img_sky": "/image/clouds.png",
         "weather_img_wind": "/image/wind.png",
@@ -57,8 +57,8 @@
         "from": "08/05/2023",
         "to": "20/05/2023",
 
-        "lat": 48,
-        "lon": 2,
+        "lat": 48.85,
+        "lon": 2.35,
 
         "weather_img_sky": "/image/clear.png",
         "weather_img_wind": "/image/wind.png",
@@ -83,8 +83,8 @@
         "from": "30/07/2023",
         "to": "10/08/2023",
 
-        "lat": 1,
-        "lon": 103,
+        "lat": 1.33,
+        "lon": 103.8,
 
         "weather_img_sky": "/image/mist.png",
         "weather_img_wind": "/image/wind.png",
