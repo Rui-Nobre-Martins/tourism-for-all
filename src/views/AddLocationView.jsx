@@ -30,10 +30,10 @@ function AddLocationView() {
                     <input required type="text" name="city" placeholder="Add new City"></input>
 
                     <label>From</label>
-                    <input className="inputDate" type="date" name="from" placeholder="mm/dd/yyyy"/>
+                    <input type="date" name="from"/>
 
                     <label>To</label>
-                    <input className="inputDate" type="date" name="to" placeholder="mm/dd/yyyy"/>
+                    <input type="date" name="to"/>
 
                     <label>Why this place?</label>
                     <textarea name="text"/>
