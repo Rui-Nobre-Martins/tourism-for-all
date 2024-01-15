@@ -1,5 +1,5 @@
-import Footer from "../components/Footer";
-import NavegationBar from "../components/NavegationBar";
+
+import NavegationBar from "../components/NavegationBar"
 
 function PageNotFoundView () {
     

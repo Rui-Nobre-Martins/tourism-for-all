@@ -1,10 +1,10 @@
-import * as React from 'react';
+import * as React from 'react'
 import "mapbox-gl/dist/mapbox-gl.css";
-import  Map,{ NavigationControl, Marker} from 'react-map-gl';
+import  Map,{ NavigationControl, Marker} from 'react-map-gl'
 
 function MapDetail ({cityInfo}) {
     
-    const MapDetailTOKEN = "pk.eyJ1Ijoicm1hcnRpbnMwMSIsImEiOiJjbHFsank3dHYxNTRxMmlyeTE5aTRsdmJzIn0.ru0GQjaXB_qaVMJWez801g";
+    const MapDetailTOKEN = import.meta.env.VITE_API_KEY1;
 
     const lat = cityInfo.lat;
     const lon = cityInfo.lon;

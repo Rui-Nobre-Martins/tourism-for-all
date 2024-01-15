@@ -1,8 +1,8 @@
-import * as React from 'react';
+import * as React from 'react'
 import "mapbox-gl/dist/mapbox-gl.css"
 import  Map,{ GeolocateControl, Marker, NavigationControl} from 'react-map-gl'
 import { useState, useEffect } from "react"
-import MapboxApiSevice from '../services/MapboxApiSevice';
+import MapboxApiSevice from '../services/MapboxApiSevice'
 
 function MapBox() {
 
@@ -21,7 +21,7 @@ function MapBox() {
         window.location.href = "/details/" + info.id; 
     }
 
-    const Token = "pk.eyJ1Ijoicm1hcnRpbnMwMSIsImEiOiJjbHFsank3dHYxNTRxMmlyeTE5aTRsdmJzIn0.ru0GQjaXB_qaVMJWez801g";
+    const Token = import.meta.env.VITE_API_KEY1;
 
     const [centerMapbox, setCenterMapbox] = useState({
 
@@ -38,28 +38,21 @@ function MapBox() {
             {...centerMapbox}
             mapboxAccessToken={Token}
             onMove={function (state) {
-                return (
                     setCenterMapbox(state.centerMapbox)
-                ) 
             }}
 
             mapStyle="mapbox://styles/mapbox/streets-v9">
             
-            {locationForMapbox.map(function (info) {
-                return ( 
-                <>
-                <div className='location-pin'>
+            {locationForMapbox.map (info => 
+                <div key={info.id} className='location-pin'>
                     <Marker 
-                        onClick={() => {
-                            handleclick(info)
-                        }}
+                        color='#9fcad4'
+                        onClick={() => {handleclick(info)}}
                         latitude={info.lat} 
                         longitude={info.lon}>
                     </Marker>
                 </div>
-                </>
-                )
-            })};
+            )};
 
         <NavigationControl position='bottom-right' showCompass showZoom/>
         <GeolocateControl/>

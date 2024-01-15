@@ -1,5 +1,4 @@
-import { Swiper, SwiperSlide} from "swiper/react";
-
+import { Swiper, SwiperSlide} from "swiper/react"
 
 function Slider({cityInfo}) {
 
@@ -16,7 +15,7 @@ function Slider({cityInfo}) {
                     // navigation
                     >
                     {cityInfo.slider.map( (item) => (
-                        <SwiperSlide className="sliderItem" >
+                        <SwiperSlide key={item.slider_img} className="sliderItem" >
                             <img src= {item.slider_img} alt="travel photos" />
                         </SwiperSlide>
                         ))}

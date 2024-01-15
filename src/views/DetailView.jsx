@@ -3,8 +3,9 @@ import { useEffect, useState } from "react"
 import NavegationBar from "../components/NavegationBar"
 import Slider from "../components/Slider"
 import Footer from "../components/Footer"
-import MapDetail from "../components/MapDetail";
-import CityApiService from "../services/CityApiService";
+import MapDetail from "../components/MapDetail"
+import CityApiService from "../services/CityApiService"
+import WeatherApiService from "../services/WeatherApiService"
 
 function DetailView({id}) {
 
@@ -26,16 +27,15 @@ function DetailView({id}) {
             }
             setCityInfo(foundElement);
 
-
-            const urlAPIWeather = `https://api.openweathermap.org/data/2.5/weather?lat=${foundElement.lat}&lon=${foundElement.lon}&exclude=current,daily&appid=237b465750446e0f62f21b7e627d067c&units=metric`;
-
-            const responseWeatherAPI = await fetch(urlAPIWeather);
-            const resultWeatherAPI = await responseWeatherAPI.json();
+            
+            const urlAPIWeather = `https://api.openweathermap.org/data/2.5/weather?lat=${foundElement.lat}&lon=${foundElement.lon}&exclude=current,daily&appid=${import.meta.env.VITE_API_KEY}&units=metric`;
+            
+            const resultWeatherAPI = await WeatherApiService.getWeatherData(urlAPIWeather);
 
             setWeatherInfo(resultWeatherAPI);
             
 
-            const urlAPIForecast = `https://api.openweathermap.org/data/2.5/forecast?lat=${foundElement.lat}&lon=${foundElement.lon}&appid=237b465750446e0f62f21b7e627d067c&units=metric`;
+            const urlAPIForecast = `https://api.openweathermap.org/data/2.5/forecast?lat=${foundElement.lat}&lon=${foundElement.lon}&appid=${import.meta.env.VITE_API_KEY}&units=metric`;
             
             const responseForecastAPI = await fetch(urlAPIForecast);
             const resultForecastAPI = await responseForecastAPI.json();
@@ -54,13 +54,13 @@ function DetailView({id}) {
 
     function getCoord() {
         if ((cityInfo.lat && cityInfo.lon) != undefined) {
-            return (<MapDetail cityInfo={cityInfo}/>)
+            return (<MapDetail key={cityInfo.id} cityInfo={cityInfo}/>)
         }
     }
 
     function getSlider() {
         if (cityInfo.slider != undefined) {
-            return (<Slider cityInfo={cityInfo}/>)
+            return (<Slider key={cityInfo.id} cityInfo={cityInfo}/>)
         }
     }
     
@@ -110,22 +110,18 @@ function DetailView({id}) {
             
         <div className="forecastContainer">
             <div className="forecast" >
-                {forecastInfo?.map( (item) => { 
-                    return(
-                    <>
-                    <div className="forecastContent">
+                {forecastInfo?.map( item => 
+                    <div key={item.dt} className="forecastContent">
                         <p>{(item.dt_txt).substring(0,10)}</p>  
                         <p>{Math.round(item.main.temp) + " ºC"}</p> 
                         <img className="weatherIcon" src={"https://openweathermap.org/img/wn/"+ item.weather?.[0].icon + ".png"} alt="weathericon"></img>
                     </div>
-                    </>
-                    )
-                    })}
-                </div>
+                    )}
+            </div>
                 
-                {getCoord()}
+            {getCoord()}
                 
-            </div>    
+        </div>    
         <Footer/>
         </>
     )

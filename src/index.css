@@ -221,6 +221,15 @@ body {
 /* Finish cardContainer Lastest Trips */
 
 /* Start Map "Location" */
+
+.mapboxgl-ctrl-logo, .mapboxgl-ctrl-attrib {
+  visibility: hidden;
+}
+
+.mapboxgl-marker {
+  cursor: pointer;
+}
+
 .mapLocation{
   width: 100%;
   max-width: 1200px;
@@ -258,8 +267,6 @@ input, textarea {
   border: 1px solid #ccc;
   border-radius: 5px;
 }
-
-
 
 
 /* Finish Subscribe Form */
@@ -423,6 +430,13 @@ footer {
   padding: 5px;
 }
 
+.detailContentText {
+  line-height: 25px;
+  text-justify: inter-word;
+  white-space:  pre-line;
+  vertical-align: bottom;
+}
+
 
 
 .detailContent {
@@ -569,6 +583,7 @@ footer {
   width: 70%;
   max-width: 1200px;
   margin: 0 auto;
+  margin-bottom: 40px;
 }
 
 /* Finish MapDetail */
@@ -578,13 +593,14 @@ footer {
   display: flex;
   padding-top: 100px;
   flex-direction: column;
-  
 }
 
 .imgPageNotFound {
   padding-top: 20px;
   width: 500px;
 }
+
+
 
 
 
