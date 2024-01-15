@@ -35,7 +35,7 @@ body {
   --extra-light: #a0b4ba;
 }
 
-/* Start Navegation Bar */
+
 
 .navBar {
   display: flex;
@@ -107,10 +107,6 @@ body {
 
 }
 
-/* Finish Favegation Bar */
-
-
-/* Start Hero */
 .hero {
   padding-top: 80px;
 }
@@ -131,10 +127,6 @@ body {
   height: 400px;
   object-fit: cover;
 }
-/* Finish Hero */
-
-
-/* Start cardContainer Lastest Trips */
 
 .travellersTitle {
   padding-top: 20px;
@@ -181,7 +173,6 @@ body {
   
 }
 
-
 .travellersCard:hover {
   -webkit-transform: scale(1.1);
    transform: scale(1.1);
@@ -218,10 +209,6 @@ body {
   color: var(--text-dark);
 }
 
-/* Finish cardContainer Lastest Trips */
-
-/* Start Map "Location" */
-
 .mapboxgl-ctrl-logo, .mapboxgl-ctrl-attrib {
   visibility: hidden;
 }
@@ -240,10 +227,7 @@ body {
   padding-top: 20px;
   filter: drop-shadow(0px 0px 10px rgba(0, 0, 0, 0.3))
 }
-/* Finish Map "Location" */
 
-
-/* Start Subscribe Form */
 .formTipsContainer {
   max-width: 1200px;
   margin: 0 auto;
@@ -268,11 +252,6 @@ input, textarea {
   border-radius: 5px;
 }
 
-
-/* Finish Subscribe Form */
-
-
-/* Start Footer  */
 footer {
   position: relative;
   width: 100%;
@@ -290,13 +269,7 @@ footer {
 .footerC {
   font-size: small;
 }
- 
-/* Finish Footer  */
 
-
-/* ----------------------------- VIEW PAGE ----------------------------- */
-
-/* Start AboutUs VIEW */
 .aboutContainer {
   padding-top: 40px;
   max-width: 1200px;
@@ -340,10 +313,6 @@ footer {
   }
 }
 
-/* Finish AboutUs VIEW */
-
-
-/* Start ADDLocation VIEW - FORM */
 .formContainer {
   padding: 50px;
   max-width: 1200px;
@@ -384,12 +353,6 @@ footer {
   background-color: var(--primary-color-dark);
 }
 
-/* Finish ADD Location VIEW */
-
-
-
-/* Start The TravelerView */
-
 .sliderTraveler {
   padding: 20px;
 }
@@ -406,10 +369,6 @@ footer {
   height: 400px;
   object-fit: contain;
 }
-
-/* Finish  The TravelerView */
-
-/* Start The DetailView */
 
 @media screen and (max-width: 699px) {
   
@@ -439,25 +398,11 @@ footer {
   vertical-align: bottom;
 }
 
-
-
 .detailContent {
   display: flex;
   gap: 20px;
   padding: 20px;
 }
-
-
-/* Finish The DetailView */
-
-
-
-
-
-
-/* API weather */
-
-
 
 .weather{
   display: flex;
@@ -536,9 +481,6 @@ footer {
   align-items: center;
 }
 
-
-
-
 @media screen and (max-width: 699px) {
   .forecastContainer {
     display: flex;
@@ -546,7 +488,6 @@ footer {
   }
 
   .forecast {
-    /* background: linear-gradient(135deg, var(--primary-color-dark), var(--primary-color)); */
     color: var(--white);
     display: flex;
     flex-direction: column;
@@ -566,8 +507,6 @@ footer {
   }
 }
 
-/* Start MapBox */
-
 .mapBoxContainer {
   padding: 20px;
   height: 500px;
@@ -575,9 +514,6 @@ footer {
   max-width: 1200px;
   margin: 0 auto;
 }
-/* Finish MapBox */
-
-/* Start MapDetail */
 
 .mapDetail {
   padding: 20px;
@@ -587,8 +523,6 @@ footer {
   margin: 0 auto;
   margin-bottom: 40px;
 }
-
-/* Finish MapDetail */
 
 .page404Container {
   text-align: center;
