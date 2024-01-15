@@ -358,6 +358,7 @@ footer {
 .formContent {
   display: flex;
   justify-content: center;
+  appearance: none;
 }
 
  input, textarea {
