@@ -353,6 +353,7 @@ footer {
 .inputDate {
   appearance: none;
   background-color: var(--white);
+  color: var(--text-dark);
 }
 
 .formTitle {
