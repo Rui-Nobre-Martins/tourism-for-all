@@ -28,7 +28,7 @@ function MapBox() {
         latitude: 46,
         longitude: 25,
         zoom: 1,
-        interactive: true
+        interactive: false
     })
 
     return(

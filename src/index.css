@@ -350,6 +350,10 @@ footer {
   margin: 0 auto;
   }
 
+.from {
+  appearance: none;
+}
+
 .formTitle {
   padding: 40px;
   text-align: center;
