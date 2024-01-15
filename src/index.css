@@ -361,6 +361,7 @@ footer {
 }
 
  input, textarea {
+  appearance: none;
   display: flex;
   justify-content: center;
   width: 300px;
