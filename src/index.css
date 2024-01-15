@@ -393,7 +393,6 @@ footer {
 
 .detailContentText {
   line-height: 25px;
-  text-justify: inter-word;
   white-space:  pre-line;
   vertical-align: bottom;
 }
