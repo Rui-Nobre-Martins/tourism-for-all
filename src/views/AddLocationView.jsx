@@ -24,10 +24,10 @@ function AddLocationView() {
 
                 <form onSubmit={handleSubmit}>
                     <label>Country</label>
-                    <input type="text" name="country" placeholder="New Country"/>
+                    <input required type="text" name="country" placeholder="New Country"/>
 
                     <label>City</label>
-                    <input type="text" name="city" placeholder="Add new City"></input>
+                    <input required type="text" name="city" placeholder="Add new City"></input>
 
                     <label>From</label>
                     <input className="inputDate" type="date" name="from" placeholder="mm/dd/yyyy"/>
