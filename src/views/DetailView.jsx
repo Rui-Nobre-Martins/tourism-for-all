@@ -28,14 +28,14 @@ function DetailView({id}) {
             setCityInfo(foundElement);
 
             
-            const urlAPIWeather = `https://api.openweathermap.org/data/2.5/weather?lat=${foundElement.lat}&lon=${foundElement.lon}&exclude=current,daily&appid=${import.meta.env.VITE_API_KEY}&units=metric`;
+            const urlAPIWeather = `https://api.openweathermap.org/data/2.5/weather?lat=${foundElement.lat}&lon=${foundElement.lon}&exclude=current,daily&appid="237b465750446e0f62f21b7e627d067c"&units=metric`;
             
             const resultWeatherAPI = await WeatherApiService.getWeatherData(urlAPIWeather);
 
             setWeatherInfo(resultWeatherAPI);
             
 
-            const urlAPIForecast = `https://api.openweathermap.org/data/2.5/forecast?lat=${foundElement.lat}&lon=${foundElement.lon}&appid=${import.meta.env.VITE_API_KEY}&units=metric`;
+            const urlAPIForecast = `https://api.openweathermap.org/data/2.5/forecast?lat=${foundElement.lat}&lon=${foundElement.lon}&appid="237b465750446e0f62f21b7e627d067c"&units=metric`;
             
             const responseForecastAPI = await fetch(urlAPIForecast);
             const resultForecastAPI = await responseForecastAPI.json();

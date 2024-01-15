@@ -21,7 +21,7 @@ function MapBox() {
         window.location.href = "/details/" + info.id; 
     }
 
-    const Token = import.meta.env.VITE_API_KEY1;
+    const Token = "pk.eyJ1Ijoicm1hcnRpbnMwMSIsImEiOiJjbHFsank3dHYxNTRxMmlyeTE5aTRsdmJzIn0.ru0GQjaXB_qaVMJWez801g";
 
     const [centerMapbox, setCenterMapbox] = useState({
 

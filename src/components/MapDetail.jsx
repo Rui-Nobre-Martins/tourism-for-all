@@ -4,7 +4,7 @@ import  Map,{ NavigationControl, Marker} from 'react-map-gl'
 
 function MapDetail ({cityInfo}) {
     
-    const MapDetailTOKEN = import.meta.env.VITE_API_KEY1;
+    const MapDetailTOKEN = "pk.eyJ1Ijoicm1hcnRpbnMwMSIsImEiOiJjbHFsank3dHYxNTRxMmlyeTE5aTRsdmJzIn0.ru0GQjaXB_qaVMJWez801g";
 
     const lat = cityInfo.lat;
     const lon = cityInfo.lon;
