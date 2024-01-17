@@ -23,9 +23,6 @@ body {
   font-family: "Poppins", sans-serif;
 }
 
-
-
-
 :root {
   --primary-color: #9fcad4;
   --primary-color-dark: #74a4b3;
@@ -34,8 +31,6 @@ body {
   --white: #ffffff;
   --extra-light: #a0b4ba;
 }
-
-
 
 .navBar {
   display: flex;
